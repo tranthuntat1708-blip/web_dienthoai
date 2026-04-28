@@ -1,0 +1,1389 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\pages\\loginpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\pages\\loginpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\tsconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\tsconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\web_noithat.client.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\web_noithat.client.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\pages\\productdetailpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\pages\\productdetailpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\pages\\productlistpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\pages\\productlistpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\pages\\cartpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\pages\\cartpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\components\\product\\productspecs.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\components\\product\\productspecs.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\components\\product\\productfilter.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\components\\product\\productfilter.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\components\\product\\productgallery.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\components\\product\\productgallery.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\components\\product\\productcard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\components\\product\\productcard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\components\\common\\flashsalecountdown.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\components\\common\\flashsalecountdown.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\pages\\homepage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\pages\\homepage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\utils\\format.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\utils\\format.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\assets\\imagemap.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\assets\\imagemap.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\utils\\imageresolver.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\utils\\imageresolver.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\pages\\checkoutpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\pages\\checkoutpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\components\\layout\\customerlayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\components\\layout\\customerlayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\components\\layout\\adminlayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\components\\layout\\adminlayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\store\\categoriesstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\store\\categoriesstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\components\\layout\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\components\\layout\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\api\\blogs.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\api\\blogs.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\api\\vouchers.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\api\\vouchers.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\api\\flashsale.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\api\\flashsale.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\controllers\\voucherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\controllers\\voucherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\docs\\PRD.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\PRD.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\api\\auth.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\api\\auth.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\api\\categories.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\api\\categories.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\openspec.config.yaml||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:openspec.config.yaml||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\dtos\\orderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\dtos\\orderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\models\\productbundle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\models\\productbundle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\pages\\admin\\adminpromotions.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\pages\\admin\\adminpromotions.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\pages\\admin\\adminorders.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\pages\\admin\\adminorders.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\pages\\admin\\adminappointments.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\pages\\admin\\adminappointments.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\pages\\admin\\adminblog.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\pages\\admin\\adminblog.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\docs\\specs\\WebNoiThat.postman_collection.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\specs\\WebNoiThat.postman_collection.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\models\\wishlistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\models\\wishlistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\pages\\admin\\admindashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\pages\\admin\\admindashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\api\\orders.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\api\\orders.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\api\\appointments.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\api\\appointments.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\dtos\\productdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\dtos\\productdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\docs\\specs\\project-structure.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\specs\\project-structure.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\vite-env.d.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\vite-env.d.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\components\\appointment\\appointmentform.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\components\\appointment\\appointmentform.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\models\\blogpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\models\\blogpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\models\\voucher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\models\\voucher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\docs\\archive\\.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\archive\\.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\docs\\specs\\.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\specs\\.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\dtos\\appointmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\dtos\\appointmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\dtos\\commondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\dtos\\commondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\types\\product.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\types\\product.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\types\\order.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\types\\order.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\types\\appointment.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\types\\appointment.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\api\\client.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\api\\client.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\api\\products.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\api\\products.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\store\\cartstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\store\\cartstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\store\\authstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\store\\authstore.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\components\\layout\\footer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\components\\layout\\footer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\pages\\appointmentpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\pages\\appointmentpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\pages\\admin\\adminproducts.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\pages\\admin\\adminproducts.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.client\\src\\pages\\admin\\adminreviews.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{BE0F8646-35F7-6732-4517-AAA816881AD1}|web_noithat.client\\web_noithat.client.esproj|solutionrelative:web_noithat.client\\src\\pages\\admin\\adminreviews.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|c:\\users\\pc\\onedrive\\desktop\\231a290060_tr\u1EA7nthanh\u0111\u1EA3m\\web_noithat\\web_noithat.server\\controllers\\flashsalecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D299B05E-C4FF-4B1A-81F5-13563FA813E1}|Web_NoiThat.Server\\Web_NoiThat.Server.csproj|solutionrelative:web_noithat.server\\controllers\\flashsalecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Program.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Program.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Program.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAhwJAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T19:01:23.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "tsconfig.json",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\tsconfig.json",
+              "RelativeDocumentMoniker": "web_noithat.client\\tsconfig.json",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\tsconfig.json",
+              "RelativeToolTip": "web_noithat.client\\tsconfig.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-02T18:53:55.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginPage.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\LoginPage.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\pages\\LoginPage.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\LoginPage.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\pages\\LoginPage.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:32:27.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Data\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Data\\DbSeeder.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Data\\DbSeeder.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Data\\DbSeeder.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T19:02:44.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "vite.config.js",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\vite.config.js",
+              "RelativeDocumentMoniker": "web_noithat.client\\vite.config.js",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\vite.config.js",
+              "RelativeToolTip": "web_noithat.client\\vite.config.js",
+              "ViewState": "AgIAACEAAAAAAAAAAAAhwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-02T18:54:00.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductDetailPage.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\ProductDetailPage.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\pages\\ProductDetailPage.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\ProductDetailPage.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\pages\\ProductDetailPage.jsx",
+              "ViewState": "AgIAANMAAAAAAAAAAAAnwOQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:31:21.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "web_noithat.client.esproj",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\web_noithat.client.esproj",
+              "RelativeDocumentMoniker": "web_noithat.client\\web_noithat.client.esproj",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\web_noithat.client.esproj",
+              "RelativeToolTip": "web_noithat.client\\web_noithat.client.esproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-02T19:22:06.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductListPage.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\ProductListPage.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\pages\\ProductListPage.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\ProductListPage.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\pages\\ProductListPage.jsx",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAuwIgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:30:41.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CartPage.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\CartPage.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\pages\\CartPage.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\CartPage.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\pages\\CartPage.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:31:47.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\appsettings.json",
+              "RelativeToolTip": "Web_NoiThat.Server\\appsettings.json",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-02T19:00:42.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductSpecs.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\product\\ProductSpecs.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\components\\product\\ProductSpecs.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\product\\ProductSpecs.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\components\\product\\ProductSpecs.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T18:51:06.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductFilter.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\product\\ProductFilter.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\components\\product\\ProductFilter.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\product\\ProductFilter.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\components\\product\\ProductFilter.jsx",
+              "ViewState": "AgIAACQAAAAAAAAAAAAswHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T18:51:23.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductGallery.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\product\\ProductGallery.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\components\\product\\ProductGallery.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\product\\ProductGallery.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\components\\product\\ProductGallery.jsx",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAtwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T18:50:57.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductCard.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\product\\ProductCard.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\components\\product\\ProductCard.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\product\\ProductCard.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\components\\product\\ProductCard.jsx",
+              "ViewState": "AgIAAF4AAAAAAAAAAAD4v2cAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T18:50:43.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FlashSaleCountdown.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\common\\FlashSaleCountdown.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\components\\common\\FlashSaleCountdown.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\common\\FlashSaleCountdown.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\components\\common\\FlashSaleCountdown.jsx",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T18:51:30.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomePage.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\HomePage.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\pages\\HomePage.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\HomePage.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\pages\\HomePage.jsx",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:30:16.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CheckoutPage.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\CheckoutPage.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\pages\\CheckoutPage.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\CheckoutPage.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\pages\\CheckoutPage.jsx",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:32:12.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "imageMap.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\assets\\imageMap.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\assets\\imageMap.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\assets\\imageMap.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\assets\\imageMap.ts",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAKUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-03T11:56:58.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "format.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\utils\\format.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\utils\\format.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\utils\\format.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\utils\\format.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-02T18:51:53.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CustomerLayout.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\layout\\CustomerLayout.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\components\\layout\\CustomerLayout.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\layout\\CustomerLayout.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\components\\layout\\CustomerLayout.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:29:16.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "imageResolver.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\utils\\imageResolver.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\utils\\imageResolver.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\utils\\imageResolver.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\utils\\imageResolver.ts",
+              "ViewState": "AgIAAHEAAAAAAAAAAIBJwHMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-03T02:55:52.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AdminLayout.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\layout\\AdminLayout.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\components\\layout\\AdminLayout.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\layout\\AdminLayout.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\components\\layout\\AdminLayout.jsx",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:29:36.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "categoriesStore.js",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\store\\categoriesStore.js",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\store\\categoriesStore.js",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\store\\categoriesStore.js",
+              "RelativeToolTip": "web_noithat.client\\src\\store\\categoriesStore.js",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-03T03:02:21.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Header.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\layout\\Header.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\components\\layout\\Header.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\layout\\Header.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\components\\layout\\Header.jsx",
+              "ViewState": "AgIAAP0AAAAAAAAAAAAAAP0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:28:48.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "blogs.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\blogs.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\api\\blogs.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\blogs.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\api\\blogs.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-03T02:56:00.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "vouchers.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\vouchers.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\api\\vouchers.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\vouchers.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\api\\vouchers.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-03T02:56:06.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "flashsale.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\flashsale.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\api\\flashsale.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\flashsale.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\api\\flashsale.ts",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-03T02:56:12.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "FlashSaleController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\FlashSaleController.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Controllers\\FlashSaleController.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\FlashSaleController.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Controllers\\FlashSaleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T02:55:18.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Controllers\\BlogController.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Controllers\\BlogController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T02:54:40.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PRD.md",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\docs\\PRD.md",
+              "RelativeDocumentMoniker": "docs\\PRD.md",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\docs\\PRD.md",
+              "RelativeToolTip": "docs\\PRD.md",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-03-02T18:22:49.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "VouchersController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\VouchersController.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Controllers\\VouchersController.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\VouchersController.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Controllers\\VouchersController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAuwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T01:14:29.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAowGYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T01:11:59.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "auth.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\auth.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\api\\auth.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\auth.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\api\\auth.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-03T01:15:23.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "categories.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\categories.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\api\\categories.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\categories.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\api\\categories.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-03T01:15:33.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T01:12:09.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Controllers\\AppointmentsController.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\AppointmentsController.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Controllers\\AppointmentsController.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:49:48.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\OrderItem.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:46:55.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\Category.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:46:36.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "OrderDtos.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\DTOs\\OrderDtos.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\DTOs\\OrderDtos.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\DTOs\\OrderDtos.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\DTOs\\OrderDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:48:46.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "openspec.config.yaml",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\openspec.config.yaml",
+              "RelativeDocumentMoniker": "openspec.config.yaml",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\openspec.config.yaml",
+              "RelativeToolTip": "openspec.config.yaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-03-02T18:22:53.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ProductBundle.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\ProductBundle.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Models\\ProductBundle.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\ProductBundle.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Models\\ProductBundle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:46:40.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AdminPromotions.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\admin\\AdminPromotions.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\pages\\admin\\AdminPromotions.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\admin\\AdminPromotions.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\pages\\admin\\AdminPromotions.jsx",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAK0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:35:56.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\App.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\App.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\App.jsx",
+              "ViewState": "AgIAACoAAAAAAAAAAAAkwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:38:00.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "AdminBlog.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\admin\\AdminBlog.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\pages\\admin\\AdminBlog.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\admin\\AdminBlog.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\pages\\admin\\AdminBlog.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:36:26.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AdminOrders.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\admin\\AdminOrders.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\pages\\admin\\AdminOrders.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\admin\\AdminOrders.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\pages\\admin\\AdminOrders.jsx",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAKoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:34:31.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AdminAppointments.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\admin\\AdminAppointments.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\pages\\admin\\AdminAppointments.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\admin\\AdminAppointments.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\pages\\admin\\AdminAppointments.jsx",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAIoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:34:56.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "WebNoiThat.postman_collection.json",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\docs\\specs\\WebNoiThat.postman_collection.json",
+              "RelativeDocumentMoniker": "docs\\specs\\WebNoiThat.postman_collection.json",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\docs\\specs\\WebNoiThat.postman_collection.json",
+              "RelativeToolTip": "docs\\specs\\WebNoiThat.postman_collection.json",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAAAP8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-02T19:06:29.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "AdminReviews.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\admin\\AdminReviews.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\pages\\admin\\AdminReviews.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\admin\\AdminReviews.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\pages\\admin\\AdminReviews.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:35:19.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "AdminProducts.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\admin\\AdminProducts.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\pages\\admin\\AdminProducts.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\admin\\AdminProducts.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\pages\\admin\\AdminProducts.jsx",
+              "ViewState": "AgIAAAEBAAAAAAAAAIBJwAMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:33:58.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "AdminDashboard.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\admin\\AdminDashboard.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\pages\\admin\\AdminDashboard.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\admin\\AdminDashboard.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\pages\\admin\\AdminDashboard.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:33:14.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "AppointmentPage.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\AppointmentPage.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\pages\\AppointmentPage.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\pages\\AppointmentPage.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\pages\\AppointmentPage.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:32:48.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "Footer.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\layout\\Footer.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\components\\layout\\Footer.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\layout\\Footer.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\components\\layout\\Footer.jsx",
+              "ViewState": "AgIAAIcAAAAAAAAAAIBJwIkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T19:29:07.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "authStore.js",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\store\\authStore.js",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\store\\authStore.js",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\store\\authStore.js",
+              "RelativeToolTip": "web_noithat.client\\src\\store\\authStore.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-02T19:28:21.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "cartStore.js",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\store\\cartStore.js",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\store\\cartStore.js",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\store\\cartStore.js",
+              "RelativeToolTip": "web_noithat.client\\src\\store\\cartStore.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-02T19:28:12.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\index.css",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\index.css",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\index.css",
+              "RelativeToolTip": "web_noithat.client\\src\\index.css",
+              "ViewState": "AgIAAIgAAAAAAAAAAABBwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-02T19:27:53.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\index.html",
+              "RelativeDocumentMoniker": "web_noithat.client\\index.html",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\index.html",
+              "RelativeToolTip": "web_noithat.client\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-03-02T19:18:54.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\appsettings.Development.json",
+              "RelativeToolTip": "Web_NoiThat.Server\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-02T19:00:55.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "vite-env.d.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\vite-env.d.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\vite-env.d.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\vite-env.d.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\vite-env.d.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-02T18:54:10.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "project-structure.md",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\docs\\specs\\project-structure.md",
+              "RelativeDocumentMoniker": "docs\\specs\\project-structure.md",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\docs\\specs\\project-structure.md",
+              "RelativeToolTip": "docs\\specs\\project-structure.md",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-03-02T18:52:23.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "AppointmentForm.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\appointment\\AppointmentForm.jsx",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\components\\appointment\\AppointmentForm.jsx",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\components\\appointment\\AppointmentForm.jsx",
+              "RelativeToolTip": "web_noithat.client\\src\\components\\appointment\\AppointmentForm.jsx",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-03-02T18:51:47.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "appointments.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\appointments.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\api\\appointments.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\appointments.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\api\\appointments.ts",
+              "ViewState": "AgIAABYAAAAAAAAAAIBJwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-02T18:50:32.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "orders.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\orders.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\api\\orders.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\orders.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\api\\orders.ts",
+              "ViewState": "AgIAACEAAAAAAAAAAIBJwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-02T18:50:28.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "products.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\products.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\api\\products.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\products.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\api\\products.ts",
+              "ViewState": "AgIAABQAAAAAAAAAAIBJwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-02T18:50:22.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "client.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\client.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\api\\client.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\api\\client.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\api\\client.ts",
+              "ViewState": "AgIAABwAAAAAAAAAAIBJwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-02T18:50:17.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "appointment.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\types\\appointment.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\types\\appointment.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\types\\appointment.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\types\\appointment.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-02T18:50:10.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "order.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\types\\order.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\types\\order.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\types\\order.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\types\\order.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-02T18:50:05.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "product.ts",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\types\\product.ts",
+              "RelativeDocumentMoniker": "web_noithat.client\\src\\types\\product.ts",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\web_noithat.client\\src\\types\\product.ts",
+              "RelativeToolTip": "web_noithat.client\\src\\types\\product.ts",
+              "ViewState": "AgIAAFEAAAAAAAAAAIBJwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-03-02T18:49:57.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAMsAAAAAAAAAAABZwM8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:49:41.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAANsAAAAAAAAAAEBVwN8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:49:30.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAABRwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:49:11.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "CommonDtos.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\DTOs\\CommonDtos.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\DTOs\\CommonDtos.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\DTOs\\CommonDtos.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\DTOs\\CommonDtos.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAABRwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:49:02.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "AppointmentDtos.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\DTOs\\AppointmentDtos.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\DTOs\\AppointmentDtos.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\DTOs\\AppointmentDtos.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\DTOs\\AppointmentDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:48:53.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ProductDtos.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\DTOs\\ProductDtos.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\DTOs\\ProductDtos.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\DTOs\\ProductDtos.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\DTOs\\ProductDtos.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAIBZwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:48:38.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "BlogPost.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\BlogPost.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Models\\BlogPost.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\BlogPost.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Models\\BlogPost.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:48:28.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\AppUser.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:48:23.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "WishlistItem.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\WishlistItem.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Models\\WishlistItem.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\WishlistItem.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Models\\WishlistItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:48:17.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Voucher.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\Voucher.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Models\\Voucher.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\Voucher.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Models\\Voucher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:48:13.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Models\\Review.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\Review.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Models\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:47:52.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Models\\Appointment.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\Appointment.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Models\\Appointment.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:47:04.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\Order.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:46:49.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\ProductImage.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Models\\ProductImage.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\ProductImage.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Models\\ProductImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:46:33.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Web_NoiThat.Server\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\Web_NoiThat.Server\\Models\\Product.cs",
+              "RelativeToolTip": "Web_NoiThat.Server\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T18:46:29.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": ".gitkeep",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\docs\\archive\\.gitkeep",
+              "RelativeDocumentMoniker": "docs\\archive\\.gitkeep",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\docs\\archive\\.gitkeep",
+              "RelativeToolTip": "docs\\archive\\.gitkeep",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-02T18:22:46.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": ".gitkeep",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\docs\\specs\\.gitkeep",
+              "RelativeDocumentMoniker": "docs\\specs\\.gitkeep",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_Tr\u1EA7nThanh\u0110\u1EA3m\\Web_NoiThat\\docs\\specs\\.gitkeep",
+              "RelativeToolTip": "docs\\specs\\.gitkeep",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-02T18:22:42.725Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

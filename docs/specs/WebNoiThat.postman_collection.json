@@ -1,0 +1,511 @@
+﻿{
+  "info": {
+    "name": "Web Nội Thất API",
+    "_postman_id": "web-noithat-api-v1",
+    "description": "Postman Collection cho toàn bộ API của nền tảng Web_NoiThat.\nBase URL: https://localhost:7001/api\n\nHướng dẫn sử dụng:\n1. Import file này vào Postman\n2. Đổi biến {{base_url}} nếu cần\n3. Chạy 'POST /auth/login' → copy token vào biến {{token}}",
+  "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "base_url", "value": "https://localhost:7001/api", "type": "string" },
+    { "key": "token",    "value": "",         "type": "string" }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [{ "key": "token", "value": "{{token}}", "type": "string" }]
+  },
+  "item": [
+
+    {
+      "name": "🔐 Auth",
+      "item": [
+        {
+      "name": "Đăng ký tài khoản",
+          "request": {
+  "method": "POST",
+     "url": "{{base_url}}/auth/register",
+     "header": [{ "key": "Content-Type", "value": "application/json" }],
+         "body": {
+              "mode": "raw",
+         "raw": "{\n  \"fullName\": \"Nguyễn Văn A\",\n  \"email\": \"user@example.com\",\n  \"password\": \"User@123456\"\n}"
+         }
+ }
+        },
+        {
+          "name": "Đăng nhập",
+      "event": [
+         {
+      "listen": "test",
+ "script": {
+   "exec": [
+                  "const res = pm.response.json();",
+ "if (res.token) pm.collectionVariables.set('token', res.token);"
+         ]
+         }
+        }
+   ],
+"request": {
+     "method": "POST",
+     "url": "{{base_url}}/auth/login",
+   "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+   "mode": "raw",
+        "raw": "{\n  \"email\": \"admin@noithat.vn\",\n  \"password\": \"Admin@123456\"\n}"
+          }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "📦 Products",
+      "item": [
+        {
+    "name": "Lấy danh sách sản phẩm (có filter)",
+          "request": {
+            "method": "GET",
+          "url": {
+  "raw": "{{base_url}}/products?page=1&pageSize=12&sortBy=newest",
+        "host": ["{{base_url}}"],
+   "path": ["products"],
+            "query": [
+     { "key": "page",       "value": "1" },
+        { "key": "pageSize",   "value": "12" },
+       { "key": "sortBy",     "value": "newest",      "description": "newest | price_asc | price_desc | best_seller" },
+       { "key": "categoryId", "value": "",            "disabled": true },
+        { "key": "material",   "value": "Gỗ",          "disabled": true, "description": "Gỗ | Da | Vải | Kính" },
+  { "key": "style",      "value": "Minimalist",  "disabled": true, "description": "Minimalist | Indochine | Scandinavian" },
+       { "key": "minPrice",   "value": "1000000",     "disabled": true },
+              { "key": "maxPrice",   "value": "20000000",    "disabled": true }
+     ]
+            }
+    }
+   },
+{
+  "name": "Chi tiết sản phẩm theo slug",
+          "request": {
+            "method": "GET",
+          "url": "{{base_url}}/products/sofa-da-bo-nordic-3-cho"
+  }
+        },
+   {
+        "name": "Tìm kiếm gợi ý (auto-suggest)",
+          "request": {
+            "method": "GET",
+          "url": {
+         "raw": "{{base_url}}/products/search?q=sofa",
+"query": [{ "key": "q", "value": "sofa" }]
+     }
+     }
+     },
+        {
+   "name": "[Admin] Tạo sản phẩm mới",
+          "request": {
+  "method": "POST",
+"url": "{{base_url}}/products",
+     "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+     "mode": "raw",
+     "raw": "{\n  \"name\": \"Ghế Ăn Gỗ Sồi DINING PRO\",\n  \"slug\": \"ghe-an-go-soi-dining-pro\",\n  \"description\": \"Ghế ăn gỗ sồi tự nhiên, bọc vải linen.\",\n  \"price\": 1800000,\n  \"categoryId\": 3,\n  \"material\": \"Gỗ\",\n  \"style\": \"Scandinavian\",\n  \"color\": \"Nâu sồi\",\n  \"lengthCm\": 45,\n  \"widthCm\": 50,\n  \"heightCm\": 90,\n  \"weightKg\": 6.5,\n  \"stock\": 50,\n  \"mainImageUrl\": \"https://placehold.co/800x800?text=Ghe+An\"\n}"
+ }
+          }
+        },
+        {
+          "name": "[Admin] Cập nhật sản phẩm",
+ "request": {
+      "method": "PUT",
+            "url": "{{base_url}}/products/1",
+       "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] },
+      "header": [{ "key": "Content-Type", "value": "application/json" }],
+  "body": {
+   "mode": "raw",
+              "raw": "{\n  \"price\": 17000000,\n  \"salePrice\": 14500000,\n  \"isOnSale\": true,\n  \"stock\": 10\n}"
+     }
+          }
+    },
+        {
+          "name": "[Admin] Xóa sản phẩm",
+    "request": {
+            "method": "DELETE",
+       "url": "{{base_url}}/products/1",
+          "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] }
+          }
+        },
+        {
+      "name": "[Admin] Cập nhật thứ tự ảnh (Drag & Drop)",
+    "request": {
+         "method": "PUT",
+ "url": "{{base_url}}/products/1/images/sort",
+     "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+         "body": {
+            "mode": "raw",
+         "raw": "[\n  { \"imageId\": 1, \"sortOrder\": 0 },\n  { \"imageId\": 2, \"sortOrder\": 1 },\n  { \"imageId\": 3, \"sortOrder\": 2 }\n]"
+            }
+  }
+        }
+    ]
+    },
+
+    {
+      "name": "🗂️ Categories",
+      "item": [
+        {
+          "name": "Lấy tất cả danh mục",
+          "request": { "method": "GET", "url": "{{base_url}}/categories" }
+      },
+        {
+          "name": "[Admin] Tạo danh mục",
+  "request": {
+            "method": "POST",
+            "url": "{{base_url}}/categories",
+  "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] },
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+"body": {
+     "mode": "raw",
+  "raw": "{\n  \"name\": \"Ngoài trời\",\n  \"slug\": \"ngoai-troi\",\n  \"imageUrl\": \"https://placehold.co/400x300?text=Ngoai+Troi\"\n}"
+    }
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "🛒 Orders",
+      "item": [
+  {
+          "name": "Tạo đơn hàng + lấy VNPay URL",
+          "request": {
+            "method": "POST",
+   "url": "{{base_url}}/orders",
+         "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] },
+ "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"Retail\",\n  \"receiverName\": \"Nguyễn Văn A\",\n  \"receiverPhone\": \"0901234567\",\n  \"receiverAddress\": \"123 Lê Lợi, Q1, TP.HCM\",\n  \"voucherCode\": \"WELCOME10\",\n  \"items\": [\n    {\n      \"productId\": 1,\n      \"productName\": \"Sofa Da Bò Cao Cấp NORDIC 3 Chỗ\",\n      \"mainImageUrl\": \"https://placehold.co/800x800\",\n      \"unitPrice\": 15900000,\n \"quantity\": 1\n    }\n  ]\n}"
+            }
+    }
+        },
+        {
+          "name": "Đơn hàng của tôi",
+          "request": {
+            "method": "GET",
+     "url": "{{base_url}}/orders/my",
+   "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] }
+          }
+ },
+        {
+        "name": "Chi tiết đơn hàng",
+   "request": {
+     "method": "GET",
+          "url": "{{base_url}}/orders/1",
+            "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] }
+          }
+        },
+      {
+          "name": "VNPay IPN Webhook (giả lập)",
+   "request": {
+        "method": "POST",
+  "url": {
+     "raw": "{{base_url}}/orders/vnpay-ipn?vnp_TmnCode=TEST&vnp_Amount=1590000000&vnp_ResponseCode=00&vnp_TransactionStatus=00&vnp_TxnRef=ORD-001&vnp_TransactionNo=VNP12345&vnp_BankCode=NCB&vnp_BankTranNo=FT000001&vnp_CardType=ATM&vnp_PayDate=20240101120000&vnp_OrderInfo=Thanh+toan+don+hang&vnp_SecureHash=FAKE_HASH",
+    "query": [
+    { "key": "vnp_TmnCode",     "value": "TEST" },
+    { "key": "vnp_Amount",    "value": "1590000000" },
+    { "key": "vnp_ResponseCode",      "value": "00" },
+        { "key": "vnp_TransactionStatus", "value": "00" },
+        { "key": "vnp_TxnRef",            "value": "ORD-001" },
+  { "key": "vnp_TransactionNo",     "value": "VNP12345" },
+     { "key": "vnp_SecureHash",        "value": "FAKE_HASH" }
+   ]
+       }
+          }
+        },
+        {
+     "name": "[Admin] Danh sách tất cả đơn hàng",
+ "request": {
+          "method": "GET",
+            "url": {
+         "raw": "{{base_url}}/orders?page=1&pageSize=20&status=Pending",
+      "query": [
+                { "key": "page", "value": "1" },
+    { "key": "pageSize", "value": "20" },
+         { "key": "status", "value": "Pending", "description": "Pending|Processing|Shipping|Completed|Cancelled|Refunded" }
+              ]
+            },
+    "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] }
+          }
+        }
+      ]
+    },
+
+  {
+      "name": "📅 Appointments",
+      "item": [
+        {
+          "name": "Đặt lịch tư vấn",
+ "request": {
+        "method": "POST",
+            "url": "{{base_url}}/appointments",
+   "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+           "mode": "raw",
+              "raw": "{\n  \"fullName\": \"Trần Thị B\",\n  \"phone\": \"0912345678\",\n  \"email\": \"tranb@example.com\",\n  \"need\": \"NewDesign\",\n  \"appointmentDate\": \"2024-12-25\",\n  \"appointmentTime\": \"10:00\",\n  \"attachmentBase64\": null,\n  \"attachmentFileName\": null\n}"
+    }
+       }
+     },
+   {
+   "name": "Lịch hẹn của tôi",
+          "request": {
+      "method": "GET",
+            "url": "{{base_url}}/appointments/my",
+      "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] }
+   }
+   },
+        {
+          "name": "[Admin] Danh sách lịch hẹn",
+          "request": {
+   "method": "GET",
+   "url": {
+              "raw": "{{base_url}}/appointments?page=1&pageSize=20&status=New",
+   "query": [
+                { "key": "page", "value": "1" },
+    { "key": "pageSize", "value": "20" },
+        { "key": "status", "value": "New", "description": "New|Confirmed|Completed|Cancelled" }
+  ]
+            },
+    "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] }
+   }
+        },
+        {
+          "name": "[Admin] Cập nhật trạng thái lịch hẹn",
+      "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/appointments/1/status",
+"auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] },
+     "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+           "mode": "raw",
+              "raw": "{\n  \"status\": \"Confirmed\",\n  \"adminNote\": \"Đã xác nhận, nhân viên sẽ liên hệ trước 30 phút.\"\n}"
+   }
+      }
+        }
+    ]
+    },
+
+    {
+      "name": "⭐ Reviews",
+  "item": [
+    {
+          "name": "Đăng đánh giá sản phẩm",
+      "request": {
+      "method": "POST",
+"url": "{{base_url}}/reviews",
+   "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] },
+    "header": [{ "key": "Content-Type", "value": "application/json" }],
+ "body": {
+  "mode": "raw",
+        "raw": "{\n  \"productId\": 1,\n  \"rating\": 5,\n  \"comment\": \"Sofa rất đẹp và chắc chắn, đúng như mô tả!\",\n  \"imageBase64List\": []\n}"
+        }
+   }
+        },
+        {
+    "name": "Đánh giá theo sản phẩm",
+       "request": {
+       "method": "GET",
+         "url": {
+     "raw": "{{base_url}}/reviews?productId=1&page=1&pageSize=10",
+        "query": [
+     { "key": "productId", "value": "1" },
+   { "key": "page", "value": "1" },
+     { "key": "pageSize", "value": "10" }
+              ]
+   }
+          }
+        },
+        {
+      "name": "[Admin] Duyệt đánh giá",
+  "request": {
+      "method": "PUT",
+   "url": "{{base_url}}/reviews/1/approve",
+            "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] }
+          }
+        },
+        {
+          "name": "[Admin] Phản hồi đánh giá",
+        "request": {
+  "method": "PUT",
+        "url": "{{base_url}}/reviews/1/reply",
+            "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+ "body": {
+   "mode": "raw",
+       "raw": "{\n  \"reply\": \"Cảm ơn bạn đã tin tưởng sản phẩm của chúng tôi!\"\n}"
+        }
+        }
+   }
+      ]
+    },
+
+    {
+      "name": "💝 Wishlist",
+      "item": [
+    {
+          "name": "Thêm vào wishlist",
+          "request": {
+   "method": "POST",
+        "url": "{{base_url}}/wishlist",
+    "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] },
+     "header": [{ "key": "Content-Type", "value": "application/json" }],
+"body": { "mode": "raw", "raw": "{ \"productId\": 1 }" }
+          }
+        },
+        {
+          "name": "Lấy wishlist của tôi",
+   "request": {
+            "method": "GET",
+   "url": "{{base_url}}/wishlist",
+  "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] }
+          }
+        },
+        {
+          "name": "Xóa khỏi wishlist",
+ "request": {
+ "method": "DELETE",
+       "url": "{{base_url}}/wishlist/1",
+            "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] }
+          }
+  }
+      ]
+    },
+
+    {
+      "name": "🏷️ Vouchers",
+      "item": [
+        {
+ "name": "Kiểm tra mã giảm giá",
+          "request": {
+    "method": "POST",
+      "url": "{{base_url}}/vouchers/validate",
+   "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+"mode": "raw",
+     "raw": "{\n  \"code\": \"WELCOME10\",\n  \"orderAmount\": 15900000\n}"
+       }
+          }
+        },
+   {
+     "name": "[Admin] Danh sách voucher",
+          "request": {
+       "method": "GET",
+            "url": "{{base_url}}/vouchers",
+    "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] }
+  }
+     },
+        {
+          "name": "[Admin] Tạo voucher",
+ "request": {
+  "method": "POST",
+            "url": "{{base_url}}/vouchers",
+     "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+     "body": {
+      "mode": "raw",
+           "raw": "{\n  \"code\": \"TETHOLIDAY30\",\n  \"discountPercent\": 30,\n  \"maxDiscountAmount\": 3000000,\n  \"minOrderAmount\": 10000000,\n  \"maxUsageCount\": 200,\n  \"expiresAt\": \"2025-02-15T00:00:00\"\n}"
+            }
+          }
+}
+      ]
+    },
+
+    {
+   "name": "⚡ Flash Sale",
+      "item": [
+        {
+          "name": "Lấy flash sale đang chạy",
+    "request": { "method": "GET", "url": "{{base_url}}/flashsales/active" }
+        },
+        {
+    "name": "[Admin] Tạo flash sale",
+          "request": {
+    "method": "POST",
+            "url": "{{base_url}}/flashsales",
+        "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+        "mode": "raw",
+          "raw": "{\n  \"name\": \"Sale Ngày 11/11\",\n  \"startAt\": \"2024-11-11T00:00:00\",\n  \"endAt\": \"2024-11-11T23:59:59\",\n  \"items\": [\n    { \"productId\": 1, \"salePrice\": 12000000, \"stockLimit\": 20 },\n    { \"productId\": 4, \"salePrice\": 4500000, \"stockLimit\": 15 }\n  ]\n}"
+      }
+   }
+        }
+   ]
+    },
+
+    {
+      "name": "📝 Blog / Lookbook",
+      "item": [
+        {
+          "name": "Danh sách bài viết",
+ "request": {
+            "method": "GET",
+  "url": {
+       "raw": "{{base_url}}/blog?type=Blog&page=1&pageSize=10",
+              "query": [
+        { "key": "type", "value": "Blog", "description": "Blog | Lookbook" },
+                { "key": "page", "value": "1" },
+    { "key": "pageSize", "value": "10" }
+      ]
+  }
+          }
+        },
+        {
+   "name": "Chi tiết bài viết",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/blog/5-xu-huong-noi-that-2024"
+        }
+        },
+  {
+          "name": "[Admin] Đăng bài viết mới",
+          "request": {
+        "method": "POST",
+          "url": "{{base_url}}/blog",
+      "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] },
+ "header": [{ "key": "Content-Type", "value": "application/json" }],
+      "body": {
+            "mode": "raw",
+       "raw": "{\n  \"title\": \"Thiết kế phòng ngủ nhỏ tối ưu không gian\",\n  \"slug\": \"thiet-ke-phong-ngu-nho-toi-uu\",\n  \"excerpt\": \"Các mẹo hay để tối ưu không gian phòng ngủ nhỏ.\",\n  \"content\": \"<p>Nội dung đầy đủ...</p>\",\n  \"coverImageUrl\": \"https://placehold.co/1200x600\",\n  \"type\": \"Blog\"\n}"
+            }
+          }
+    }
+      ]
+    },
+
+    {
+      "name": "👤 User Profile",
+    "item": [
+        {
+          "name": "Thông tin cá nhân",
+      "request": {
+            "method": "GET",
+         "url": "{{base_url}}/users/me",
+            "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] }
+ }
+        },
+        {
+      "name": "Cập nhật thông tin",
+          "request": {
+       "method": "PUT",
+"url": "{{base_url}}/users/me",
+            "auth": { "type": "bearer", "bearer": [{ "key": "token", "value": "{{token}}" }] },
+    "header": [{ "key": "Content-Type", "value": "application/json" }],
+   "body": {
+          "mode": "raw",
+       "raw": "{\n  \"fullName\": \"Nguyễn Văn B\",\n  \"defaultAddress\": \"456 Nguyễn Huệ, Q1, TP.HCM\"\n}"
+  }
+      }
+        }
+      ]
+    }
+
+  ]
+}

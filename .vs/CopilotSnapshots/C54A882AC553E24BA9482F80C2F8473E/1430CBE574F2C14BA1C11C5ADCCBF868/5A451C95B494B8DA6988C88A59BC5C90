@@ -1,0 +1,360 @@
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Web_NoiThat.Server.Models;
+
+namespace Web_NoiThat.Server.Data;
+
+/// <summary>
+/// Seed dữ liệu mẫu nội thất vào SQL Server.
+/// Chỉ chạy khi database còn trống.
+/// </summary>
+public static class DbSeeder
+{
+    public static async Task SeedAsync(
+        AppDbContext db,
+        UserManager<AppUser> userManager,
+  RoleManager<IdentityRole> roleManager)
+    {
+   // ── 1. Roles ──────────────────────────────────────────
+        foreach (var role in new[] { "Admin", "Customer" })
+        {
+            if (!await roleManager.RoleExistsAsync(role))
+     await roleManager.CreateAsync(new IdentityRole(role));
+  }
+
+        // ── 2. Admin user ─────────────────────────────────────
+        const string adminEmail = "admin@noithat.vn";
+        if (await userManager.FindByEmailAsync(adminEmail) is null)
+        {
+     var admin = new AppUser
+     {
+             UserName = adminEmail,
+  Email = adminEmail,
+     FullName = "Quản trị viên",
+  EmailConfirmed = true
+            };
+await userManager.CreateAsync(admin, "Admin@123456");
+        await userManager.AddToRoleAsync(admin, "Admin");
+ }
+
+        // ── 3. Categories ─────────────────────────────────────
+        if (await db.Categories.AnyAsync()) return; // Skip nếu đã seed
+
+        var categories = new List<Category>
+    {
+            new() { Name = "Phòng khách",   Slug = "phong-khach",   ImageUrl = "https://placehold.co/400x300?text=Phong+Khach" },
+        new() { Name = "Phòng ngủ",  Slug = "phong-ngu",     ImageUrl = "https://placehold.co/400x300?text=Phong+Ngu" },
+ new() { Name = "Phòng ăn",      Slug = "phong-an",      ImageUrl = "https://placehold.co/400x300?text=Phong+An" },
+   new() { Name = "Phòng làm việc",Slug = "phong-lam-viec",ImageUrl = "https://placehold.co/400x300?text=Van+Phong" },
+            new() { Name = "Phòng tắm",     Slug = "phong-tam",     ImageUrl = "https://placehold.co/400x300?text=Phong+Tam" },
+        };
+        db.Categories.AddRange(categories);
+        await db.SaveChangesAsync();
+
+      var phongKhach = categories[0];
+        var phongNgu   = categories[1];
+        var phongAn    = categories[2];
+        var vanPhong= categories[3];
+
+   // ── 4. Products ───────────────────────────────────────
+     var products = new List<Product>
+    {
+            // ── Phòng khách ──────────────────────────────────
+        new()
+            {
+     Name        = "Sofa Da Bò Cao Cấp NORDIC 3 Chỗ",
+          Slug        = "sofa-da-bo-nordic-3-cho",
+      Description = "Sofa da bò thật 100%, khung gỗ sồi Bắc Âu, đệm mút cao su non D40. Thiết kế Minimalist phù hợp phòng khách hiện đại.",
+      Price       = 18_500_000,
+  SalePrice   = 15_900_000,
+    IsOnSale    = true,
+         CategoryId  = phongKhach.Id,
+    Material    = "Da",
+           Style= "Minimalist",
+          Color       = "Nâu",
+  LengthCm    = 220, WidthCm = 90, HeightCm = 82, WeightKg = 68,
+      Stock   = 12, SoldCount = 87,
+                MainImageUrl = "https://placehold.co/800x800?text=Sofa+Da+NORDIC",
+      SubImages =
+            [
+    new ProductImage { Url = "https://placehold.co/800x800?text=Sofa+Nordic+Side",  SortOrder = 1 },
+          new ProductImage { Url = "https://placehold.co/800x800?text=Sofa+Nordic+Back",  SortOrder = 2 },
+          new ProductImage { Url = "https://placehold.co/800x800?text=Sofa+Nordic+Seat",  SortOrder = 3 },
+   ]
+            },
+            new()
+   {
+ Name        = "Bàn Trà Gỗ Óc Chó Tự Nhiên WALNUT",
+        Slug   = "ban-tra-go-oc-cho-walnut",
+     Description = "Bàn trà mặt gỗ óc chó nguyên tấm, chân thép sơn tĩnh điện đen. Phong cách Indochine hiện đại.",
+          Price       = 6_200_000,
+   CategoryId  = phongKhach.Id,
+      Material    = "Gỗ",
+      Style       = "Indochine",
+                Color       = "Nâu đậm",
+          LengthCm    = 120, WidthCm = 60, HeightCm = 45, WeightKg = 22,
+            Stock   = 25, SoldCount = 134,
+          MainImageUrl = "https://placehold.co/800x800?text=Ban+Tra+Walnut",
+        SubImages =
+         [
+           new ProductImage { Url = "https://placehold.co/800x800?text=Walnut+Top",    SortOrder = 1 },
+                    new ProductImage { Url = "https://placehold.co/800x800?text=Walnut+Detail", SortOrder = 2 },
+ ]
+            },
+   new()
+        {
+          Name      = "Kệ TV Gỗ Thông PINE 1m6",
+    Slug     = "ke-tv-go-thong-pine-1m6",
+        Description = "Kệ TV gỗ thông tự nhiên, thiết kế mở tối giản, có ngăn dây gọn gàng. Phù hợp TV 55-75 inch.",
+   Price       = 4_800_000,
+      SalePrice   = 4_200_000,
+        IsOnSale    = true,
+         CategoryId  = phongKhach.Id,
+ Material    = "Gỗ",
+             Style       = "Minimalist",
+          Color       = "Trắng sữa",
+             LengthCm    = 160, WidthCm = 40, HeightCm = 50, WeightKg = 35,
+Stock       = 8, SoldCount = 56,
+       MainImageUrl = "https://placehold.co/800x800?text=Ke+TV+Pine",
+            },
+            new()
+        {
+           Name        = "Ghế Sofa Đơn Vải Chenille COZY",
+        Slug      = "ghe-sofa-don-vai-chenille-cozy",
+ Description = "Ghế sofa đơn bọc vải Chenille cao cấp, chân gỗ sồi, đệm lò xo túi 8 zone. Màu xanh rêu theo trend 2024.",
+     Price  = 5_500_000,
+      CategoryId  = phongKhach.Id,
+     Material    = "Vải",
+        Style       = "Scandinavian",
+         Color = "Xanh rêu",
+    LengthCm    = 80, WidthCm = 85, HeightCm = 90, WeightKg = 18,
+         Stock     = 20, SoldCount = 203,
+        MainImageUrl = "https://placehold.co/800x800?text=Ghe+Cozy+Xanh",
+   SubImages =
+             [
+ new ProductImage { Url = "https://placehold.co/800x800?text=Cozy+Back",   SortOrder = 1 },
+      new ProductImage { Url = "https://placehold.co/800x800?text=Cozy+Fabric",  SortOrder = 2 },
+    ]
+        },
+
+            // ── Phòng ngủ ────────────────────────────────────
+  new()
+            {
+        Name        = "Giường Ngủ Gỗ Sồi Tự Nhiên OSLO 1m8",
+           Slug        = "giuong-ngu-go-soi-oslo-1m8",
+                Description = "Giường đôi 1m8 gỗ sồi trắng tự nhiên, đầu giường bọc da PU cao cấp, ngăn kéo tiện lợi. Phong cách Bắc Âu.",
+         Price       = 12_000_000,
+     SalePrice   = 10_500_000,
+          IsOnSale  = true,
+     CategoryId  = phongNgu.Id,
+      Material    = "Gỗ",
+  Style       = "Scandinavian",
+        Color       = "Trắng sồi",
+       LengthCm    = 203, WidthCm = 183, HeightCm = 110, WeightKg = 95,
+   Stock  = 6, SoldCount = 45,
+       MainImageUrl = "https://placehold.co/800x800?text=Giuong+Oslo",
+       SubImages =
+      [
+new ProductImage { Url = "https://placehold.co/800x800?text=Oslo+Side",    SortOrder = 1 },
+      new ProductImage { Url = "https://placehold.co/800x800?text=Oslo+Storage", SortOrder = 2 },
+            new ProductImage { Url = "https://placehold.co/800x800?text=Oslo+Detail",  SortOrder = 3 },
+      ]
+        },
+            new()
+            {
+     Name        = "Tủ Quần Áo Gỗ MDF SAKURA 4 Cánh",
+      Slug      = "tu-quan-ao-go-mdf-sakura-4-canh",
+             Description = "Tủ quần áo 4 cánh gỗ MDF phủ melamine trắng, gương chiếu nội thất, hệ ray giảm chấn Blum.",
+              Price       = 8_900_000,
+       CategoryId  = phongNgu.Id,
+     Material    = "Gỗ",
+ Style       = "Minimalist",
+     Color    = "Trắng",
+   LengthCm    = 200, WidthCm = 60, HeightCm = 220, WeightKg = 130,
+      Stock       = 4, SoldCount = 29,
+        MainImageUrl = "https://placehold.co/800x800?text=Tu+Sakura",
+            },
+            new()
+       {
+   Name        = "Bàn Trang Điểm Gương LED AURORA",
+                Slug = "ban-trang-diem-guong-led-aurora",
+     Description = "Bàn trang điểm với gương đèn LED 3 tone ánh sáng, 6 ngăn kéo, mặt bàn đá giả marble cao cấp.",
+     Price     = 3_800_000,
+ CategoryId  = phongNgu.Id,
+         Material = "Gỗ",
+Style       = "Classic",
+          Color       = "Hồng trắng",
+     LengthCm    = 100, WidthCm = 45, HeightCm = 145, WeightKg = 28,
+            Stock       = 15, SoldCount = 178,
+       MainImageUrl = "https://placehold.co/800x800?text=Ban+Trang+Diem",
+            SubImages =
+     [
+   new ProductImage { Url = "https://placehold.co/800x800?text=Aurora+Mirror", SortOrder = 1 },
+            new ProductImage { Url = "https://placehold.co/800x800?text=Aurora+Drawer", SortOrder = 2 },
+       ]
+            },
+
+    // ── Phòng ăn ─────────────────────────────────────
+  new()
+            {
+                Name        = "Bộ Bàn Ăn Gỗ Óc Chó 6 Ghế FAMILY",
+    Slug    = "bo-ban-an-go-oc-cho-6-ghe-family",
+         Description = "Bộ bàn ăn 6 ghế gỗ óc chó tự nhiên, mặt bàn nguyên tấm không ghép, ghế bọc vải linen nhập khẩu.",
+                Price       = 28_000_000,
+    SalePrice   = 24_500_000,
+        IsOnSale    = true,
+  CategoryId  = phongAn.Id,
+     Material    = "Gỗ",
+       Style       = "Indochine",
+Color       = "Nâu óc chó",
+            LengthCm    = 180, WidthCm = 90, HeightCm = 76, WeightKg = 120,
+      Stock    = 3, SoldCount = 21,
+    MainImageUrl = "https://placehold.co/800x800?text=Bo+Ban+An+Family",
+   SubImages =
+     [
+          new ProductImage { Url = "https://placehold.co/800x800?text=Family+Top",   SortOrder = 1 },
+             new ProductImage { Url = "https://placehold.co/800x800?text=Family+Chair",  SortOrder = 2 },
+  new ProductImage { Url = "https://placehold.co/800x800?text=Family+Leg",    SortOrder = 3 },
+                ]
+            },
+            new()
+       {
+          Name        = "Tủ Rượu Kính Cường Lực VINO",
+    Slug        = "tu-ruou-kinh-cuong-luc-vino",
+     Description = "Tủ rượu cao cấp với kính cường lực 8mm, đèn LED nền, chứa tối đa 48 chai, khung nhôm sơn đen.",
+       Price       = 9_500_000,
+    CategoryId  = phongAn.Id,
+                Material    = "Kính",
+ Style    = "Minimalist",
+             Color       = "Đen khói",
+    LengthCm    = 80, WidthCm = 40, HeightCm = 160, WeightKg = 55,
+  Stock       = 7, SoldCount = 63,
+        MainImageUrl = "https://placehold.co/800x800?text=Tu+Ruou+Vino",
+            },
+
+    // ── Phòng làm việc ───────────────────────────────
+          new()
+         {
+       Name  = "Bàn Làm Việc Gỗ Thông WORKMATE L-Shape",
+          Slug   = "ban-lam-viec-go-thong-workmate-l-shape",
+       Description = "Bàn làm việc chữ L gỗ thông tự nhiên, chân sắt sơn trắng, có thanh quản lý dây và ngăn kéo khóa. Thiết kế tối ưu cho không gian làm việc.",
+  Price       = 5_200_000,
+     CategoryId= vanPhong.Id,
+          Material    = "Gỗ",
+        Style       = "Scandinavian",
+          Color       = "Trắng kem",
+   LengthCm    = 140, WidthCm = 120, HeightCm = 75, WeightKg = 38,
+     Stock       = 11, SoldCount = 92,
+         MainImageUrl = "https://placehold.co/800x800?text=Ban+Workmate+L",
+              SubImages =
+    [
+      new ProductImage { Url = "https://placehold.co/800x800?text=Workmate+Top",    SortOrder = 1 },
+new ProductImage { Url = "https://placehold.co/800x800?text=Workmate+Cable",   SortOrder = 2 },
+            ]
+     },
+            new()
+         {
+   Name        = "Ghế Công Thái Học ERGO PRO",
+            Slug    = "ghe-cong-thai-hoc-ergo-pro",
+     Description = "Ghế công thái học cao cấp, điều chỉnh 8 tư thế, lưng lưới 3D thoáng khí, tựa đầu tháo rời, tay vịn 4D. Phù hợp làm việc 8h/ngày.",
+          Price       = 7_800_000,
+           SalePrice   = 6_500_000,
+     IsOnSale    = true,
+          CategoryId  = vanPhong.Id,
+      Material    = "Vải",
+    Style       = "Industrial",
+                Color       = "Đen",
+      LengthCm  = 68, WidthCm = 68, HeightCm = 120, WeightKg = 18,
+    Stock     = 30, SoldCount = 412,
+          MainImageUrl = "https://placehold.co/800x800?text=Ghe+Ergo+Pro",
+SubImages =
+     [
+           new ProductImage { Url = "https://placehold.co/800x800?text=Ergo+Back",   SortOrder = 1 },
+     new ProductImage { Url = "https://placehold.co/800x800?text=Ergo+Arm",    SortOrder = 2 },
+    new ProductImage { Url = "https://placehold.co/800x800?text=Ergo+Base",   SortOrder = 3 },
+]
+            },
+        };
+
+        db.Products.AddRange(products);
+        await db.SaveChangesAsync();
+
+    // ── 5. ProductBundles (Mua kèm) ───────────────────────
+    // Sofa mua kèm Bàn trà + Kệ TV
+        db.ProductBundles.AddRange(
+        new ProductBundle { ProductId = products[0].Id, BundledProductId = products[1].Id },
+new ProductBundle { ProductId = products[0].Id, BundledProductId = products[2].Id },
+      new ProductBundle { ProductId = products[0].Id, BundledProductId = products[3].Id },
+            // Giường mua kèm Tủ quần áo + Bàn trang điểm
+       new ProductBundle { ProductId = products[4].Id, BundledProductId = products[5].Id },
+     new ProductBundle { ProductId = products[4].Id, BundledProductId = products[6].Id },
+  // Bàn làm việc mua kèm ghế
+   new ProductBundle { ProductId = products[9].Id, BundledProductId = products[10].Id }
+        );
+
+        // ── 6. Flash Sale ─────────────────────────────────────
+        var flashSale = new FlashSale
+        {
+            Name     = "Flash Sale Cuối Tuần",
+       StartAt  = DateTime.UtcNow,
+            EndAt    = DateTime.UtcNow.AddDays(2),
+            IsActive = true,
+       Items    =
+    [
+       new FlashSaleItem { ProductId = products[0].Id,  SalePrice = 13_900_000, StockLimit = 5 },
+                new FlashSaleItem { ProductId = products[10].Id, SalePrice = 5_800_000,  StockLimit = 10 },
+  ]
+        };
+        db.FlashSales.Add(flashSale);
+
+        // ── 7. Voucher ────────────────────────────────────────
+  db.Vouchers.AddRange(
+      new Voucher
+  {
+        Code           = "WELCOME10",
+                DiscountPercent  = 10,
+                MaxDiscountAmount = 500_000,
+    MinOrderAmount   = 2_000_000,
+              MaxUsageCount    = 100,
+                ExpiresAt        = DateTime.UtcNow.AddMonths(3),
+   IsActive         = true
+  },
+       new Voucher
+     {
+     Code          = "SALE20",
+           DiscountPercent  = 20,
+     MaxDiscountAmount = 2_000_000,
+          MinOrderAmount   = 10_000_000,
+      MaxUsageCount    = 50,
+   ExpiresAt        = DateTime.UtcNow.AddMonths(1),
+   IsActive         = true
+        }
+        );
+
+        // ── 8. Blog / Lookbook ────────────────────────────────
+        db.BlogPosts.AddRange(
+          new BlogPost
+      {
+              Title        = "5 Xu hướng nội thất 2024 bạn không nên bỏ lỡ",
+        Slug         = "5-xu-huong-noi-that-2024",
+           Excerpt      = "Từ phong cách Japandi đến vật liệu tự nhiên, khám phá những xu hướng nổi bật nhất năm nay.",
+Content      = "<p>Nội dung bài viết đầy đủ...</p>",
+    CoverImageUrl = "https://placehold.co/1200x600?text=Blog+Cover",
+    IsPublished  = true,
+                Type       = "Blog"
+            },
+         new BlogPost
+            {
+   Title        = "Lookbook: Không gian phòng khách theo phong cách Indochine",
+                Slug         = "lookbook-phong-khach-indochine",
+          Excerpt      = "Bộ sưu tập ảnh cảm hứng trang trí phòng khách phong cách Đông Dương hiện đại.",
+    Content      = "<p>Nội dung lookbook...</p>",
+        CoverImageUrl = "https://placehold.co/1200x600?text=Lookbook+Indochine",
+                IsPublished  = true,
+       Type         = "Lookbook"
+            }
+        );
+
+        await db.SaveChangesAsync();
+ }
+}

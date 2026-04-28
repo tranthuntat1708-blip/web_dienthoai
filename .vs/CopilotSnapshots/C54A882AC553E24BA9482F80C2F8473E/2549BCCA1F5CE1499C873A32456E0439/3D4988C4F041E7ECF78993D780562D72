@@ -1,0 +1,113 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Web_NoiThat.Server.Data;
+using Web_NoiThat.Server.DTOs;
+using Microsoft.EntityFrameworkCore;
+using Web_NoiThat.Server.Models;
+
+namespace Web_NoiThat.Server.Controllers;
+
+/// <summary>
+/// GET  /api/products          - Lấy danh sách sản phẩm (filter + sort + paging)
+/// GET  /api/products/{slug}   - Chi tiết sản phẩm
+/// POST /api/products        - Thêm sản phẩm (Admin)
+/// PUT  /api/products/{id}     - Sửa sản phẩm (Admin)
+/// DELETE /api/products/{id}   - Xóa sản phẩm (Admin)
+/// </summary>
+[ApiController]
+[Route("api/[controller]")]
+public class ProductsController : ControllerBase
+{
+    private readonly AppDbContext _db;
+    public ProductsController(AppDbContext db) => _db = db;
+
+  // GET /api/products?categoryId=1&material=Gỗ&sortBy=price_asc&page=1&pageSize=12
+    [HttpGet]
+    public async Task<ActionResult<object>> GetProducts([FromQuery] ProductFilterRequest filter)
+    {
+    var query = _db.Products
+         .Include(p => p.Category)
+            .Include(p => p.Reviews)
+            .Where(p => p.IsActive)
+       .AsQueryable();
+
+        if (filter.CategoryId.HasValue)
+            query = query.Where(p => p.CategoryId == filter.CategoryId);
+        if (!string.IsNullOrEmpty(filter.Material))
+            query = query.Where(p => p.Material == filter.Material);
+        if (!string.IsNullOrEmpty(filter.Style))
+query = query.Where(p => p.Style == filter.Style);
+   if (!string.IsNullOrEmpty(filter.Color))
+       query = query.Where(p => p.Color == filter.Color);
+      if (filter.MinPrice.HasValue)
+            query = query.Where(p => (p.SalePrice ?? p.Price) >= filter.MinPrice);
+     if (filter.MaxPrice.HasValue)
+            query = query.Where(p => (p.SalePrice ?? p.Price) <= filter.MaxPrice);
+
+        query = filter.SortBy switch
+  {
+            "price_asc"    => query.OrderBy(p => p.SalePrice ?? p.Price),
+            "price_desc"   => query.OrderByDescending(p => p.SalePrice ?? p.Price),
+    "best_seller"  => query.OrderByDescending(p => p.SoldCount),
+            _  => query.OrderByDescending(p => p.CreatedAt)
+        };
+
+        var total = await query.CountAsync();
+    var items = await query
+      .Skip((filter.Page - 1) * filter.PageSize)
+            .Take(filter.PageSize)
+            .Select(p => new ProductCardDto(
+p.Id, p.Name, p.Slug, p.MainImageUrl,
+                p.Price, p.SalePrice, p.IsOnSale,
+         p.Material, p.Style, p.Color, p.SoldCount,
+      p.Reviews.Any() ? p.Reviews.Average(r => (double)r.Rating) : null,
+       p.Reviews.Count
+   ))
+       .ToListAsync();
+
+        return Ok(new { Total = total, Page = filter.Page, PageSize = filter.PageSize, Items = items });
+  }
+
+// GET /api/products/{slug}
+    [HttpGet("{slug}")]
+    public async Task<ActionResult<ProductDetailDto>> GetProduct(string slug)
+    {
+        var p = await _db.Products
+  .Include(p => p.Category)
+            .Include(p => p.SubImages.OrderBy(i => i.SortOrder))
+            .Include(p => p.Reviews.Where(r => r.IsApproved).OrderByDescending(r => r.CreatedAt))
+     .ThenInclude(r => r.Images)
+        .Include(p => p.Reviews).ThenInclude(r => r.User)
+  .Include(p => p.Bundles).ThenInclude(b => b.BundledProduct)
+            .FirstOrDefaultAsync(p => p.Slug == slug && p.IsActive);
+
+        if (p is null) return NotFound();
+
+     var dto = new ProductDetailDto(
+       p.Id, p.Name, p.Slug, p.Description, p.MainImageUrl,
+            p.SubImages.Select(i => new ProductImageDto(i.Id, i.Url, i.AltText, i.SortOrder)),
+   p.Price, p.SalePrice, p.IsOnSale, p.Stock,
+            p.LengthCm, p.WidthCm, p.HeightCm, p.WeightKg,
+  p.Material, p.Style, p.Color,
+  new CategoryDto(
+                p.Category.Id, p.Category.Name, p.Category.Slug,
+        p.Category.Description, p.Category.ImageUrl, p.Category.Icon,
+          p.Category.SortOrder, 0),
+    p.Bundles.Select(b => new ProductCardDto(
+             b.BundledProduct.Id, b.BundledProduct.Name, b.BundledProduct.Slug,
+          b.BundledProduct.MainImageUrl, b.BundledProduct.Price, b.BundledProduct.SalePrice,
+          b.BundledProduct.IsOnSale, b.BundledProduct.Material, b.BundledProduct.Style,
+            b.BundledProduct.Color, b.BundledProduct.SoldCount, null, 0
+            )),
+  p.Reviews.Take(5).Select(r => new ReviewDto(
+          r.Id, r.User?.FullName ?? "Ẩn danh", r.User?.AvatarUrl,
+        r.Rating, r.Comment,
+                r.Images.Select(i => i.Url),
+       r.AdminReply, r.CreatedAt
+   )),
+  p.Reviews.Any() ? p.Reviews.Average(r => (double)r.Rating) : null,
+            p.Reviews.Count
+        );
+
+        return Ok(dto);
+    }
+}

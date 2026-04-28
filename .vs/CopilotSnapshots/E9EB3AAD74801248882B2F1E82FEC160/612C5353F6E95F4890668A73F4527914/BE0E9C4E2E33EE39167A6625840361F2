@@ -1,0 +1,51 @@
+﻿import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+import basicSsl from '@vitejs/plugin-basic-ssl'
+import fs from 'fs'
+import path from 'path'
+
+// Try to load cert/key from env or ./certs folder so browser can trust a stable cert
+function loadHttpsConfig() {
+ try {
+ const certPath = process.env.VITE_HTTPS_CERT || path.resolve(__dirname, 'certs', 'localhost.crt')
+ const keyPath = process.env.VITE_HTTPS_KEY || path.resolve(__dirname, 'certs', 'localhost.key')
+
+ if (fs.existsSync(certPath) && fs.existsSync(keyPath)) {
+ return {
+ cert: fs.readFileSync(certPath),
+ key: fs.readFileSync(keyPath),
+ }
+ }
+ } catch (e) {
+ // ignore and fallback
+ }
+ return null
+}
+
+const httpsConfig = loadHttpsConfig()
+
+// https://vite.dev/config/
+export default defineConfig({
+ plugins: [
+ react(),
+ tailwindcss(),
+ // keep basicSsl as fallback when no explicit certs provided
+ basicSsl(),
+ ],
+ // Cho phép Vite import ảnh jpg/png/webp/gif làm asset
+ assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.webp', '**/*.gif'],
+ server: {
+ port:61348, // Khớp với SpaProxyServerUrl trong .csproj
+ strictPort: true, // Lỗi nếu port đã bị chiếm, không tự đổi
+ // If explicit cert/key found, pass them so Vite uses the stable cert (trusted by OS)
+ https: httpsConfig ?? true,
+ proxy: {
+ '/api': {
+ target: 'https://localhost:7123',
+ changeOrigin: true,
+ secure: false, // Bỏ qua self-signed cert khi dev
+ },
+ },
+ },
+})

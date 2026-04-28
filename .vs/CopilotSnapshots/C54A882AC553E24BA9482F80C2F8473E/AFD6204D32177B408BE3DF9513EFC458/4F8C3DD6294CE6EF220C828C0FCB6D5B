@@ -1,0 +1,42 @@
+﻿// src/components/common/FlashSaleCountdown.jsx
+import { useEffect, useState } from 'react';
+
+export default function FlashSaleCountdown({ endAt }) {
+  const calcTimeLeft = () => {
+    const diff = new Date(endAt).getTime() - Date.now();
+    if (diff <= 0) return { hours: 0, minutes: 0, seconds: 0 };
+    return {
+      hours:   Math.floor(diff / 3_600_000),
+      minutes: Math.floor((diff % 3_600_000) / 60_000),
+      seconds: Math.floor((diff % 60_000) / 1_000),
+    };
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calcTimeLeft);
+
+  useEffect(() => {
+    const timer = setInterval(() => setTimeLeft(calcTimeLeft()), 1000);
+    return () => clearInterval(timer);
+  }, [endAt]);
+
+  const pad = n => String(n).padStart(2, '0');
+  const units = [timeLeft.hours, timeLeft.minutes, timeLeft.seconds];
+
+  return (
+    <div className="flex items-center gap-1 font-mono font-bold">
+      {units.map((v, i) => (
+        <span key={i} className="flex items-center gap-1">
+          <span
+      className="text-sm font-black px-2 py-1 rounded-lg tabular-nums"
+    style={{ backgroundColor: 'var(--craft-brown)', color: '#fff', minWidth: 32, textAlign: 'center', display: 'inline-block' }}
+   >
+     {pad(v)}
+   </span>
+ {i < 2 && (
+     <span className="font-black text-base" style={{ color: 'var(--craft-amber)' }}>:</span>
+          )}
+        </span>
+   ))}
+    </div>
+  );
+}

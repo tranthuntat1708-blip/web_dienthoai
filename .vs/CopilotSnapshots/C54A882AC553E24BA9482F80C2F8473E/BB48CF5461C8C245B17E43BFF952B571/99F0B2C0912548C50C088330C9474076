@@ -1,0 +1,59 @@
+﻿import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+
+// Layouts
+import CustomerLayout from './components/layout/CustomerLayout';
+import AdminLayout from './components/layout/AdminLayout';
+
+// Customer pages
+import HomePage       from './pages/HomePage';
+import ProductListPage   from './pages/ProductListPage';
+import ProductDetailPage from './pages/ProductDetailPage';
+import CartPage          from './pages/CartPage';
+import CheckoutPage      from './pages/CheckoutPage';
+import AppointmentPage   from './pages/AppointmentPage';
+import LoginPage         from './pages/LoginPage';
+
+// Admin pages
+import AdminDashboard    from './pages/admin/AdminDashboard';
+import AdminProducts     from './pages/admin/AdminProducts';
+import AdminOrders     from './pages/admin/AdminOrders';
+import AdminAppointments from './pages/admin/AdminAppointments';
+import AdminReviews      from './pages/admin/AdminReviews';
+import AdminPromotions   from './pages/admin/AdminPromotions';
+import AdminBlog         from './pages/admin/AdminBlog';
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+{/* ── Customer routes ── */}
+        <Route element={<CustomerLayout />}>
+          <Route path="/"              element={<HomePage />} />
+          <Route path="/danh-muc"      element={<ProductListPage />} />
+    <Route path="/san-pham/:slug" element={<ProductDetailPage />} />
+          <Route path="/gio-hang"      element={<CartPage />} />
+    <Route path="/thanh-toan"    element={<CheckoutPage />} />
+   <Route path="/dat-lich"      element={<AppointmentPage />} />
+      </Route>
+
+        {/* ── Auth (no layout) ── */}
+ <Route path="/dang-nhap" element={<LoginPage />} />
+        <Route path="/dang-ky"   element={<LoginPage />} />
+
+        {/* ── Admin routes ── */}
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index   element={<AdminDashboard />} />
+          <Route path="san-pham"     element={<AdminProducts />} />
+  <Route path="don-hang"     element={<AdminOrders />} />
+    <Route path="lich-hen"     element={<AdminAppointments />} />
+          <Route path="khuyen-mai"   element={<AdminPromotions />} />
+     <Route path="danh-gia"     element={<AdminReviews />} />
+     <Route path="bai-viet"   element={<AdminBlog />} />
+        </Route>
+
+        {/* ── Fallback ── */}
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}

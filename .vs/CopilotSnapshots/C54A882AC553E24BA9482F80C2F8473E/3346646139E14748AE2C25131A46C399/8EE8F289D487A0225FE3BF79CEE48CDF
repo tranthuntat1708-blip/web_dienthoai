@@ -1,0 +1,66 @@
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using Web_NoiThat.Server.Models;
+
+namespace Web_NoiThat.Server.Data;
+
+public class AppDbContext : IdentityDbContext<AppUser>
+{
+    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+
+    public DbSet<Product> Products => Set<Product>();
+    public DbSet<ProductImage> ProductImages => Set<ProductImage>();
+    public DbSet<ProductBundle> ProductBundles => Set<ProductBundle>();
+    public DbSet<Category> Categories => Set<Category>();
+    public DbSet<Order> Orders => Set<Order>();
+ public DbSet<OrderItem> OrderItems => Set<OrderItem>();
+    public DbSet<Appointment> Appointments => Set<Appointment>();
+    public DbSet<Review> Reviews => Set<Review>();
+    public DbSet<ReviewImage> ReviewImages => Set<ReviewImage>();
+    public DbSet<WishlistItem> WishlistItems => Set<WishlistItem>();
+    public DbSet<Voucher> Vouchers => Set<Voucher>();
+    public DbSet<FlashSale> FlashSales => Set<FlashSale>();
+    public DbSet<FlashSaleItem> FlashSaleItems => Set<FlashSaleItem>();
+    public DbSet<BlogPost> BlogPosts => Set<BlogPost>();
+
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        base.OnModelCreating(builder);
+
+        // Product
+        builder.Entity<Product>()
+            .HasIndex(p => p.Slug).IsUnique();
+        builder.Entity<Product>()
+       .Property(p => p.Price).HasPrecision(18, 2);
+   builder.Entity<Product>()
+  .Property(p => p.SalePrice).HasPrecision(18, 2);
+
+        // ProductBundle - tránh cascade cycle
+  builder.Entity<ProductBundle>()
+      .HasOne(b => b.BundledProduct)
+         .WithMany()
+.HasForeignKey(b => b.BundledProductId)
+   .OnDelete(DeleteBehavior.Restrict);
+
+        // Category self-reference
+        builder.Entity<Category>()
+         .HasOne(c => c.ParentCategory)
+        .WithMany(c => c.SubCategories)
+            .HasForeignKey(c => c.ParentCategoryId)
+    .OnDelete(DeleteBehavior.Restrict);
+
+        // Order
+        builder.Entity<Order>()
+        .Property(o => o.TotalAmount).HasPrecision(18, 2);
+        builder.Entity<Order>()
+        .Property(o => o.FinalAmount).HasPrecision(18, 2);
+
+    // Voucher
+        builder.Entity<Voucher>()
+            .Property(v => v.DiscountPercent).HasPrecision(5, 2);
+
+        // WishlistItem composite-like uniqueness
+        builder.Entity<WishlistItem>()
+     .HasIndex(w => new { w.UserId, w.ProductId }).IsUnique();
+  }
+}

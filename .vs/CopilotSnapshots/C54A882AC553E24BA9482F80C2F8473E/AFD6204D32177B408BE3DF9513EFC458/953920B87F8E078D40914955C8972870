@@ -1,0 +1,158 @@
+﻿// src/pages/HomePage.jsx
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowRight, Zap } from 'lucide-react';
+import ProductCard from '../components/product/ProductCard';
+import FlashSaleCountdown from '../components/common/FlashSaleCountdown';
+import { productApi } from '../api/products';
+
+// Data giả lập cho UI demo (sẽ thay bằng API thật)
+const CATEGORIES = [
+  { name: 'Giỏ & Khay', slug: 'gio-khay-dung-do', icon: '🧺' },
+  { name: 'Đèn Mây Tre', slug: 'den-may-tre-trang-tri', icon: '🏮' },
+  { name: 'Nội Thất TN', slug: 'do-noi-that-tu-nhien', icon: '🌿' },
+  { name: 'Phụ Kiện TC', slug: 'phu-kien-thoi-trang-thu-cong', icon: '👜' },
+  { name: 'Gương Decor', slug: 'guong-trang-tri', icon: '🪞' },
+  { name: 'Kệ & Giá', slug: 'ke-gia-treo-decor', icon: '🪵' },
+  { name: 'Trang Trí Tường', slug: 'trang-tri-tuong', icon: '🖼️' },
+  { name: 'Lọ Hoa & Chậu', slug: 'lo-hoa-chau-cay-decor', icon: '🪴' },
+  { name: 'Quà Tặng TC', slug: 'qua-tang-thu-cong', icon: '🎁' },
+  { name: 'Bộ Sưu Tập', slug: 'bo-suu-tap', icon: '✨' },
+];
+
+const FLASH_SALE_END = new Date(Date.now() + 8 * 3600 * 1000).toISOString();
+
+export default function HomePage() {
+  const [featured, setFeatured] = useState([]);
+  const [flashSaleProducts, setFlashSaleProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    productApi.getProducts({ page: 1, pageSize: 8, sortBy: 'best_seller' })
+      .then(res => { setFeatured(res.items); setLoading(false); })
+      .catch(() => setLoading(false));
+    productApi.getProducts({ page: 1, pageSize: 4, sortBy: 'newest' })
+      .then(res => setFlashSaleProducts(res.items));
+  }, []);
+
+  return (
+    <div>
+      {/* ── HERO BANNER ─────────────────────────────────────── */}
+      <section className="relative bg-gradient-to-br from-amber-50 via-orange-50 to-stone-100 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 py-20 md:py-28 flex flex-col md:flex-row items-center gap-10">
+    <div className="flex-1 space-y-5">
+       <span className="inline-block bg-amber-100 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full">
+              🌿 Thủ công — Tự nhiên — Bền vững
+  </span>
+  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+     Không gian sống<br />
+              <span className="text-amber-500">đậm chất thủ công</span>
+     </h1>
+  <p className="text-gray-600 text-lg max-w-md leading-relaxed">
+    Khám phá bộ sưu tập nội thất mây tre lá và đồ thủ công cao cấp. Mỗi sản phẩm là tác phẩm nghệ thuật độc đáo.
+          </p>
+          <div className="flex flex-wrap gap-3">
+    <Link to="/danh-muc" className="btn-primary flex items-center gap-2 text-base px-6 py-3">
+      Khám phá ngay <ArrowRight size={18} />
+    </Link>
+     <Link to="/dat-lich" className="btn-outline text-base px-6 py-3">
+      Đặt lịch tư vấn
+   </Link>
+      </div>
+ </div>
+          <div className="flex-1 flex justify-center">
+   <div className="relative w-80 h-80 md:w-96 md:h-96">
+              <div className="absolute inset-0 bg-amber-200 rounded-full opacity-30 blur-3xl" />
+              <img src="https://placehold.co/400x400/f59e0b/ffffff?text=🏮+Nội+Thất+TC"
+ alt="Hero" className="relative rounded-3xl object-cover w-full h-full shadow-2xl" />
+            </div>
+  </div>
+  </div>
+      </section>
+
+    {/* ── DANH MỤC NHANH ────────────────────────────────── */}
+      <section className="max-w-7xl mx-auto px-4 py-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Danh mục sản phẩm</h2>
+   <div className="grid grid-cols-5 md:grid-cols-10 gap-3">
+          {CATEGORIES.map(cat => (
+            <Link key={cat.slug} to={`/danh-muc?category=${cat.slug}`}
+    className="flex flex-col items-center gap-2 p-3 rounded-2xl bg-white border border-gray-100 hover:border-amber-300 hover:shadow-md transition-all group">
+         <span className="text-3xl group-hover:scale-110 transition-transform">{cat.icon}</span>
+            <span className="text-[10px] text-center text-gray-600 font-medium leading-tight">{cat.name}</span>
+    </Link>
+ ))}
+        </div>
+      </section>
+
+      {/* ── FLASH SALE ────────────────────────────────────── */}
+      <section className="bg-gradient-to-r from-red-600 to-orange-500 py-10">
+        <div className="max-w-7xl mx-auto px-4">
+  <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+            <div className="flex items-center gap-3">
+         <Zap size={28} className="text-yellow-300" fill="currentColor" />
+              <h2 className="text-2xl font-bold text-white">Flash Sale</h2>
+            <span className="text-white/80 text-sm">Kết thúc sau:</span>
+     <FlashSaleCountdown endAt={FLASH_SALE_END} />
+       </div>
+            <Link to="/danh-muc?sale=true"
+     className="text-sm font-semibold text-white/90 hover:text-white flex items-center gap-1">
+     Xem tất cả <ArrowRight size={16} />
+            </Link>
+ </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {flashSaleProducts.map(p => (
+     <div key={p.id} className="rounded-2xl overflow-hidden bg-white/10 backdrop-blur">
+   <ProductCard product={{ ...p, isOnSale: true }} />
+              </div>
+            ))}
+   {flashSaleProducts.length === 0 && Array.from({ length: 4 }).map((_, i) => (
+        <div key={i} className="aspect-square rounded-2xl bg-white/10 animate-pulse" />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── SẢN PHẨM NỔI BẬT ─────────────────────────────── */}
+    <section className="max-w-7xl mx-auto px-4 py-14">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-bold text-gray-900">Sản phẩm bán chạy</h2>
+          <Link to="/danh-muc" className="text-sm text-amber-600 hover:text-amber-700 flex items-center gap-1 font-medium">
+       Xem tất cả <ArrowRight size={16} />
+  </Link>
+        </div>
+        {loading ? (
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+       {Array.from({ length: 8 }).map((_, i) => (
+     <div key={i} className="aspect-square rounded-2xl bg-gray-100 animate-pulse" />
+      ))}
+ </div>
+      ) : (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {featured.map(p => <ProductCard key={p.id} product={p} />)}
+       </div>
+        )}
+      </section>
+
+      {/* ── LOOKBOOK BANNER ───────────────────────────────── */}
+      <section className="max-w-7xl mx-auto px-4 pb-14">
+        <div className="rounded-3xl bg-gradient-to-r from-stone-800 to-stone-700 p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+ <div className="flex-1 space-y-4">
+       <span className="text-amber-400 text-sm font-semibold">✨ Cảm hứng không gian</span>
+<h2 className="text-3xl font-bold text-white">Lookbook 2025</h2>
+  <p className="text-stone-300">Khám phá cách phối hợp đồ thủ công tạo nên không gian sống hoàn hảo.</p>
+            <Link to="/blog" className="btn-primary inline-flex items-center gap-2">
+     Xem Lookbook <ArrowRight size={16} />
+        </Link>
+          </div>
+          <div className="grid grid-cols-2 gap-3 w-full md:w-64">
+      {['🧺', '🏮', '🪞', '🪴'].map((icon, i) => (
+            <div key={i} className="aspect-square bg-stone-600 rounded-2xl flex items-center justify-center text-4xl hover:scale-105 transition-transform cursor-pointer">
+                {icon}
+        </div>
+     ))}
+       </div>
+        </div>
+      </section>
+    </div>
+  );
+}

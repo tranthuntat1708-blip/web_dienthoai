@@ -1,0 +1,429 @@
+﻿// src/pages/HomePage.jsx
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import ProductCard from '../components/product/ProductCard';
+import FlashSaleCountdown from '../components/common/FlashSaleCountdown';
+import { productApi } from '../api/products';
+
+// ── Ảnh local từ assets/imgs ────────────────────────────────
+import cat1  from '../assets/imgs/cat1.jpg';
+import cat2  from '../assets/imgs/cat2.jpg';
+import cat3  from '../assets/imgs/cat3.jpg';
+import cat4  from '../assets/imgs/cat4.jpg';
+import cat5  from '../assets/imgs/cat5.jpg';
+import cat6  from '../assets/imgs/cat6.jpg';
+import cat7  from '../assets/imgs/cat7.jpg';
+import cat8  from '../assets/imgs/cat8.jpg';
+import cat9  from '../assets/imgs/cat9.jpg';
+import cat10 from '../assets/imgs/cat10.jpg';
+
+import heroImg1 from '../assets/imgs/product1.jpg';
+import heroImg2 from '../assets/imgs/product4.jpg';
+
+const CATEGORIES = [
+  { name: 'Giỏ & Khay',      slug: 'gio-khay-dung-do',          img: cat1,  count: 24 },
+  { name: 'Đèn Mây Tre',     slug: 'den-may-tre-trang-tri',          img: cat2,  count: 18 },
+  { name: 'Đồ Nội Thất',     slug: 'do-noi-that-tu-nhien',      img: cat3,  count: 32 },
+  { name: 'Phụ Kiện TC',     slug: 'phu-kien-thoi-trang-thu-cong',   img: cat4,  count: 15 },
+  { name: 'Gương Decor',     slug: 'guong-trang-tri', img: cat5,  count: 12 },
+  { name: 'Kệ & Giá',    slug: 'ke-gia-treo-decor',              img: cat6,  count:  9 },
+  { name: 'Trang Trí Tường', slug: 'trang-tri-tuong',          img: cat7,  count: 21 },
+  { name: 'Lọ Hoa & Chậu',   slug: 'lo-hoa-chau-cay-decor',          img: cat8,  count: 17 },
+  { name: 'Quà Tặng TC',     slug: 'qua-tang-thu-cong',              img: cat9,  count: 14 },
+  { name: 'Bộ Sưu Tập',      slug: 'bo-suu-tap',         img: cat10, count:  6 },
+];
+const SALE_TABS = [
+  { id: 'tab1', label: '01/06 - 30/06' },
+  { id: 'tab2', label: '10/06 - 30/12' },
+  { id: 'tab3', label: '01/07 - 30/04' },
+];
+const VOUCHERS = [
+  { code: 'CRAFT200', label: 'Giam 200k', sub: 'Don tu 800k',  color: '#d4460c' },
+  { code: 'CRAF100',  label: 'Giam 100k', sub: 'Don tu 500k',  color: '#c8872a' },
+  { code: 'CRAFT50',  label: 'Giam 50k',  sub: 'Don tu 300k',  color: '#2d8a4e' },
+  { code: 'FREESHIP', label: 'Free Ship', sub: 'Moi don hang', color: '#1e6ea8' },
+];
+const TRUSTED_BRANDS = [
+  { name: 'VinHoms',   img: 'https://placehold.co/100x36/fff/999?text=VinHoms' },
+  { name: 'Phu Dong',  img: 'https://placehold.co/100x36/fff/999?text=Phu+Dong' },
+  { name: 'EcoPark',   img: 'https://placehold.co/100x36/fff/999?text=EcoPark' },
+  { name: 'Nguyen',    img: 'https://placehold.co/100x36/fff/999?text=Nguyen' },
+  { name: 'Celadon',   img: 'https://placehold.co/100x36/fff/999?text=Celadon' },
+  { name: 'Cantavil',  img: 'https://placehold.co/100x36/fff/999?text=Cantavil' },
+  { name: 'Masterise', img: 'https://placehold.co/100x36/fff/999?text=Masterise' },
+};
+const BLOG_POSTS = [
+  { tag: 'LIFESTYLE', date: '17 OCT', title: 'May Tre Dan – Huong Thoi Trang Thien Nhien Than Thien Moi Truong',      img: 'https://placehold.co/380x240/d4a574/fff?text=Blog+1' },
+  { tag: 'DESIGN',    date: '17 OCT', title: 'Gio May Tre Dan – Mon Noi That Tien Ich Cho Khong Gian Song',            img: 'https://placehold.co/380x240/c8872a/fff?text=Blog+2' },
+  { tag: 'DESIGN',    date: '17 OCT', title: 'Y Tuong Sang Tao Trang Tri Khong Gian Song Voi San Pham May Tre Thu Cong', img: 'https://placehold.co/380x240/a87040/fff?text=Blog+3' },
+];
+const SERVICES = [
+  { icon: '🚚', title: 'Giao hang tan noi', sub: 'Mien phi, nhanh chong, an toan, tren toan quoc' },
+  { icon: '🔄', title: 'Doi 1 – 1',         sub: 'Mien phi doi tra trong 30 ngay ke tu khi nhan hang' },
+  { icon: '🛡️', title: 'Bao hanh chu dao', sub: 'Bao hanh, cham chut, dich vu sau ban hang tan tam' },
+  { icon: '💬', title: 'Tu van decor',sub: 'Tu van phong thuy thiet ke theo phong cach cua ban' },
+];
+const STORY_IMGS = [
+  'https://placehold.co/180x130/c8a07a/fff?text=Thu+Cong+1',
+  'https://placehold.co/180x130/a87040/fff?text=Thu+Cong+2',
+  'https://placehold.co/180x130/8a6030/fff?text=Thu+Cong+3',
+];
+const FLASH_SALE_END = new Date(Date.now() + 8 * 3600 * 1000).toISOString();
+
+function SectionHeading({ label, title, subtitle }) {
+  return (
+    <div className="mb-6">
+  {label && <p className="section-label">{label}</p>}
+      <h2 className="section-title">{title}</h2>
+   {subtitle && <p className="text-sm mt-1.5" style={{ color: 'var(--craft-muted)' }}>{subtitle}</p>}
+    </div>
+  );
+}
+function NavArrows() {
+  return (
+    <div className="flex gap-2 flex-shrink-0">
+   <button className="w-8 h-8 rounded-full border flex items-center justify-center hover:bg-amber-50" style={{ borderColor: 'var(--craft-tan)' }}>
+     <ChevronLeft size={14} style={{ color: 'var(--craft-brown)' }} />
+    </button>
+      <button className="w-8 h-8 rounded-full border flex items-center justify-center hover:bg-amber-50" style={{ borderColor: 'var(--craft-tan)' }}>
+        <ChevronRight size={14} style={{ color: 'var(--craft-brown)' }} />
+      </button>
+    </div>
+  );
+}
+
+export default function HomePage() {
+  const [featured,      setFeatured]      = useState([]);
+  const [flashProducts, setFlashProducts] = useState([]);
+  const [loading,  setLoading]       = useState(true);
+  const [activeSaleTab, setActiveSaleTab] = useState('tab3');
+  const [heroSlide,     setHeroSlide]     = useState(0);
+
+  const heroSlides = [
+    { tag: 'TINH HOA',   title: 'MÂY TRE ĐAN',    discount: '50%', sub: 'Sản phẩm trang trí nội thất bằng mây tre lá thiên nhiên\n– Giảm giá lên đến 01/06 – 25/12.', bg: '#f0e6d4', accent: 'var(--craft-amber)', img: heroImg1 },
+    { tag: 'BỘ SƯU TẬP', title: 'ĐÈN TRANG TRÍ',  discount: '30%', sub: 'Đèn mây tre trang trí không gian sống – Phong cách Indochine độc đáo.',         bg: '#e8f0d4', accent: '#4a7c40',      img: heroImg2 },
+  ];
+
+  useEffect(() => {
+    productApi.getProducts({ page: 1, pageSize: 8, sortBy: 'best_seller' })
+      .then(res => { setFeatured(res.items); setLoading(false); })
+      .catch(() => setLoading(false));
+    productApi.getProducts({ page: 1, pageSize: 4, sortBy: 'newest' })
+      .then(res => setFlashProducts(res.items))
+      .catch(() => {});
+  }, []);
+
+  const hero = heroSlides[heroSlide];
+
+  const ph3 = (prefix) => Array.from({ length: 3 }).map((_, i) => ({ id: `${prefix}-${i}`, _ph: true }));
+
+  return (
+    <div style={{ backgroundColor: 'var(--craft-cream)' }}>
+
+      {/* 1. HERO */}
+      <section className="relative overflow-hidden" style={{ backgroundColor: hero.bg, minHeight: 360 }}>
+        <div className="max-w-7xl mx-auto px-4 py-10 md:py-16 flex flex-col md:flex-row items-center gap-8">
+    <div className="flex-1 space-y-4 animate-fadeInUp">
+            <span className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full text-white" style={{ backgroundColor: hero.accent }}>{hero.tag}</span>
+   <h1 className="text-5xl md:text-7xl font-black leading-none tracking-tight" style={{ fontFamily: "'Playfair Display',serif", color: 'var(--craft-brown)' }}>{hero.title}</h1>
+            <div className="inline-flex items-center gap-3">
+   <span className="text-5xl font-black" style={{ color: 'var(--craft-amber)' }}>GIAM SOC</span>
+            <span className="text-6xl font-black text-white px-4 py-1 rounded-2xl" style={{ backgroundColor: hero.accent }}>{hero.discount}</span>
+            </div>
+    <p className="text-sm leading-relaxed max-w-sm whitespace-pre-line" style={{ color: 'var(--craft-muted)' }}>{hero.sub}</p>
+    <div className="flex gap-3 pt-2">
+          <Link to="/danh-muc" className="btn-primary flex items-center gap-2 px-7 py-3 text-sm">Kham pha ngay <ArrowRight size={16} /></Link>
+        <Link to="/dat-lich" className="btn-outline px-7 py-3 text-sm">Tu van mien phi</Link>
+            </div>
+ </div>
+  <div className="flex-1 flex justify-center">
+        <div className="relative w-72 h-72 md:w-96 md:h-96">
+              <div className="absolute inset-4 rounded-full opacity-40 blur-2xl" style={{ backgroundColor: hero.accent }} />
+              <img src={hero.img} alt="Hero" className="relative rounded-3xl w-full h-full object-cover shadow-2xl" />
+       <div className="absolute bottom-4 right-4 bg-white rounded-2xl px-4 py-2 shadow-lg text-center">
+        <p className="text-xs font-semibold" style={{ color: 'var(--craft-muted)' }}>Giảm đến</p>
+      <p className="text-2xl font-black" style={{ color: 'var(--craft-amber)' }}>{hero.discount}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+  {heroSlides.map((_, i) => (
+       <button key={i} onClick={() => setHeroSlide(i)} className="h-1.5 rounded-full transition-all"
+              style={{ width: i === heroSlide ? 24 : 8, backgroundColor: i === heroSlide ? hero.accent : '#c8b09a' }} />
+          ))}
+        </div>
+      </section>
+
+      {/* 2. DANH MUC */}
+   <section className="max-w-7xl mx-auto px-4 py-10">
+        <div className="flex justify-end mb-4"><NavArrows /></div>
+        <div className="grid grid-cols-5 md:grid-cols-10 gap-3">
+    {CATEGORIES.map(cat => (
+            <Link key={cat.slug} to={`/danh-muc?category=${cat.slug}`} className="flex flex-col items-center gap-2 group">
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 transition-all group-hover:scale-110" style={{ borderColor: 'var(--craft-tan)', backgroundColor: 'var(--craft-beige)' }}>
+     <img src={cat.img} alt={cat.name} className="w-full h-full object-cover" />
+          </div>
+              <span className="text-[10px] text-center font-medium leading-tight" style={{ color: 'var(--craft-brown)' }}>{cat.name}</span>
+       <span className="text-[9px]" style={{ color: 'var(--craft-muted)' }}>{cat.count} sp</span>
+      </Link>
+        ))}
+      </div>
+      </section>
+
+ {/* 3. TESTIMONIALS */}
+      <section style={{ backgroundColor: 'var(--craft-brown)' }} className="py-12">
+        <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+      <div className="flex-1 space-y-4 text-center md:text-left">
+            <p className="section-label" style={{ color: '#f59e0b' }}>THU CONG CRAFT</p>
+     <h2 className="text-3xl font-bold text-white" style={{ fontFamily: "'Playfair Display',serif" }}>Khach hang noi ve chung toi</h2>
+        <p className="text-amber-200 text-sm">Hon 20.000 khach hang da su dung san pham cua chung toi</p>
+          </div>
+          <div className="flex-1 bg-white/10 backdrop-blur rounded-3xl p-6 space-y-3">
+         <div className="flex items-center gap-3">
+              <img src="https://placehold.co/40x40/e8d5bc/5c3d1e?text=K" className="w-10 h-10 rounded-full object-cover" alt="avatar" />
+         <div>
+           <p className="font-semibold text-white text-sm">Ngan Vy</p>
+      <div className="flex gap-0.5">{Array.from({ length: 5 }).map((_, i) => <span key={i} className="text-amber-400 text-xs">★</span>)}</div>
+       </div>
+            </div>
+ <p className="text-sm text-amber-100 leading-relaxed">"Toi that su bi cuon vao cac san pham cua Sudes Craft. Tung duong net thu cong tinh xao, chat lieu va cau chuyen cua nguoi tho. Dac biet la moi san pham lam moi lan, moi mau moi khac nhau."</p>
+ <div className="flex gap-1.5 pt-1">
+{[0, 1, 2].map(i => <span key={i} className="h-1.5 rounded-full" style={{ width: i === 0 ? 20 : 8, backgroundColor: i === 0 ? '#f59e0b' : 'rgba(255,255,255,0.3)' }} />)}
+     </div>
+ </div>
+        </div>
+        <div className="max-w-5xl mx-auto px-4 mt-8">
+ <div className="flex items-center justify-around flex-wrap gap-4">
+            {TRUSTED_BRANDS.map(b => <img key={b.name} src={b.img} alt={b.name} className="h-8 object-contain opacity-70 hover:opacity-100 transition-opacity" />)}
+     </div>
+        </div>
+      </section>
+
+ {/* 4. YEAR END SALE */}
+      <section className="max-w-7xl mx-auto px-4 py-12">
+   <div className="rounded-3xl overflow-hidden" style={{ backgroundColor: '#fff8ee', border: '1.5px solid var(--craft-tan)' }}>
+   <div className="p-6 md:p-8">
+     <div className="text-center mb-6">
+     <p className="section-label justify-center">CUNG SUDES CRAFT KHOI DONG</p>
+  <h2 className="section-title text-center text-3xl">"Year End Craft Sale – Xa Kho Cuoi Nam"</h2>
+  <p className="text-sm mt-2" style={{ color: 'var(--craft-muted)' }}>Cac san pham do thu cong voi gia khung – Giam sau nhieu san pham tu 01/06 – 25/12.</p>
+      </div>
+       <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+              <div className="flex gap-2 flex-wrap">
+ {SALE_TABS.map(tab => (
+   <button key={tab.id} onClick={() => setActiveSaleTab(tab.id)}
+     className="text-xs font-semibold px-4 py-2 rounded-full transition-all"
+                    style={{
+  backgroundColor: activeSaleTab === tab.id ? 'var(--craft-amber)' : 'transparent',
+        color:   activeSaleTab === tab.id ? '#fff' : 'var(--craft-brown)',
+         border:          `1.5px solid ${activeSaleTab === tab.id ? 'var(--craft-amber)' : 'var(--craft-tan)'}`,
+       }}>
+    {tab.label}
+       </button>
+      ))}
+</div>
+  <div className="flex items-center gap-3">
+         <span className="text-xs font-medium" style={{ color: 'var(--craft-muted)' }}>Ket thuc sau:</span>
+           <FlashSaleCountdown endAt={FLASH_SALE_END} />
+       </div>
+   </div>
+         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {flashProducts.length > 0
+       ? flashProducts.map(p => <ProductCard key={p.id} product={{ ...p, isOnSale: true }} />)
+      : Array.from({ length: 4 }).map((_, i) => <div key={i} className="aspect-square skeleton" />)}
+            </div>
+</div>
+        </div>
+      </section>
+
+      {/* 5. VOUCHERS */}
+      <section className="max-w-7xl mx-auto px-4 pb-10">
+     <SectionHeading label="THU CONG SUDES CRAFT" title="Ma giam gia danh cho ban" />
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+    {VOUCHERS.map(v => (
+   <div key={v.code} className="flex items-center gap-3 bg-white rounded-2xl p-4 border" style={{ borderColor: 'var(--craft-tan)' }}>
+        <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: v.color }}>
+    <span className="text-white font-black text-base">%</span>
+ </div>
+              <div className="min-w-0">
+      <p className="font-bold text-sm font-mono" style={{ color: v.color }}>{v.code}</p>
+     <p className="text-xs font-semibold" style={{ color: 'var(--craft-brown)' }}>{v.label}</p>
+        <p className="text-[10px]" style={{ color: 'var(--craft-muted)' }}>{v.sub}</p>
+     </div>
+</div>
+ ))}
+        </div>
+    </section>
+
+  {/* 6. SAN PHAM NOI BAT */}
+   <section className="max-w-7xl mx-auto px-4 pb-14">
+        <div className="flex items-start justify-between mb-6">
+          <SectionHeading label="THU CONG SUDES CRAFT" title="Cac san pham noi bat" subtitle="Su ket hop hai hoa giua thu cong truyen thong va thiet ke hien dai – dam chat tu nhien va ben vung." />
+          <NavArrows />
+        </div>
+    {loading
+          ? <div className="grid grid-cols-2 md:grid-cols-4 gap-4">{Array.from({ length: 8 }).map((_, i) => <div key={i} className="aspect-square skeleton" />)}</div>
+          : <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">{featured.map(p => <ProductCard key={p.id} product={p} />)}</div>
+        }
+        <div className="text-center mt-8"><Link to="/danh-muc" className="btn-outline px-10 py-3 text-sm">Xem them</Link></div>
+      </section>
+
+      {/* 7. GIO & KHAY (image left) */}
+      <div style={{ backgroundColor: 'var(--craft-beige)' }}>
+        <section className="max-w-7xl mx-auto px-4 py-12">
+          <div className="flex flex-col lg:flex-row gap-8 items-start">
+            <div className="lg:w-80 flex-shrink-0">
+    <div className="rounded-3xl overflow-hidden" style={{ aspectRatio: '4/5' }}>
+         <img src="https://placehold.co/320x400/d4a574/fff?text=Gio+Khay" alt="Gio va Khay" className="w-full h-full object-cover" />
+              </div>
+        </div>
+   <div className="flex-1">
+  <div className="flex items-start justify-between mb-5">
+        <div>
+           <p className="section-label">THU CONG SUDES CRAFT</p>
+       <h2 className="section-title">Gio & Khay Dan Tay</h2>
+    <p className="text-sm mt-1" style={{ color: 'var(--craft-muted)' }}>Tung net dan thu cong, tu gio xach den vat dung va trang tri cho khong gian song.</p>
+         </div>
+     <NavArrows />
+    </div>
+     <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+    {(featured.slice(0, 3).length > 0 ? featured.slice(0, 3) : ph3('a')).map((p, i) =>
+           p._ph ? <div key={i} className="aspect-square skeleton" /> : <ProductCard key={p.id} product={p} />
+     )}
+              </div>
+              <div className="mt-5"><Link to="/danh-muc?category=gio-khay-dung-do" className="btn-outline text-sm px-6 py-2.5">Xem tat ca</Link></div>
+            </div>
+     </div>
+        </section>
+      </div>
+
+      {/* 8. DEN MAY TRE (image right) */}
+      <section className="max-w-7xl mx-auto px-4 py-12">
+  <div className="flex flex-col lg:flex-row-reverse gap-8 items-start">
+          <div className="lg:w-80 flex-shrink-0">
+        <div className="rounded-3xl overflow-hidden" style={{ aspectRatio: '4/5' }}>
+        <img src="https://placehold.co/320x400/c8872a/fff?text=Den+May+Tre" alt="Den May Tre" className="w-full h-full object-cover" />
+    </div>
+          </div>
+          <div className="flex-1">
+    <div className="flex items-start justify-between mb-5">
+              <div>
+       <p className="section-label">THU CONG SUDES CRAFT</p>
+   <h2 className="section-title">Den May Tre Trang Tri</h2>
+       <p className="text-sm mt-1" style={{ color: 'var(--craft-muted)' }}>Anh sang lan qua tung net dan, mang them hoi tho tu nhien vao khong gian song.</p>
+              </div>
+   <NavArrows />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+      {(featured.slice(2, 5).length > 0 ? featured.slice(2, 5) : ph3('b')).map((p, i) =>
+  p._ph ? <div key={i} className="aspect-square skeleton" /> : <ProductCard key={p.id} product={p} />
+    )}
+            </div>
+         <div className="mt-5"><Link to="/danh-muc?category=den-may-tre-trang-tri" className="btn-outline text-sm px-6 py-2.5">Xem tat ca</Link></div>
+          </div>
+        </div>
+      </section>
+
+      {/* 9. STORY BANNER */}
+      <section className="py-14" style={{ backgroundColor: '#f5ede0' }}>
+        <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-8 items-center">
+        <div className="lg:w-2/5 flex-shrink-0">
+    <div className="rounded-3xl overflow-hidden aspect-video lg:aspect-[4/3]">
+              <img src="https://placehold.co/560x420/a87040/fff?text=Nghe+Thu+Cong" alt="Story" className="w-full h-full object-cover" />
+         </div>
+    </div>
+        <div className="flex-1 space-y-4">
+    <p className="section-label">THU CONG SUDES CRAFT</p>
+            <h2 className="section-title text-3xl md:text-4xl">Cau chuyen ve Sudes Craft</h2>
+         <p className="text-sm leading-relaxed" style={{ color: 'var(--craft-muted)' }}>Lay cam hung tu chat lieu may, tre, go, va co bien. Sudes Craft cam ket bao ton nghe truyen thong Viet. Moi san pham la cau noi giua nguoi tho thu cong va nguoi yeu noi that nghe thuat, mang den khong gian song sang trong va day cam xuc.</p>
+            <div className="grid grid-cols-3 gap-3">
+      {STORY_IMGS.map((img, i) => (
+                <div key={i} className="rounded-2xl overflow-hidden aspect-[4/3]">
+      <img src={img} alt={`Thu cong ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+           </div>
+         ))}
+            </div>
+          <Link to="/blog" className="btn-primary inline-flex items-center gap-2 px-7">Xem chi tiet <ArrowRight size={16} /></Link>
+     </div>
+        </div>
+      </section>
+
+      {/* 10. TIKTOK */}
+      <section className="py-12" style={{ backgroundColor: 'var(--craft-brown)' }}>
+        <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-10 items-center">
+   <div className="flex-1 space-y-4">
+         <p className="text-amber-400 text-xs font-bold uppercase tracking-widest">• THU CONG SUDES CRAFT</p>
+  <h2 className="text-3xl font-bold text-white" style={{ fontFamily: "'Playfair Display',serif" }}>Don nguon cam hung moc mac cung Sudes Craft tren TikTok</h2>
+   <p className="text-amber-200 text-sm leading-relaxed max-w-md">Nhung khoang khac ti mi khi lam nen nhung mon do thu cong — tu dan may, tre den son phu hoan thien. Sudes Craft mang nghe thu cong vao cuoc song hang ngay qua video decor day cam xuc.</p>
+ <a href="#" className="btn-primary inline-flex items-center gap-2 px-7">Theo doi ngay <ArrowRight size={16} /></a>
+          </div>
+          <div className="lg:w-2/5">
+       <div className="rounded-3xl overflow-hidden bg-white p-4 shadow-2xl">
+              <div className="flex items-center gap-2 mb-3">
+             <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center"><span className="text-white font-black text-sm">♪</span></div>
+      <span className="font-semibold text-sm text-gray-800">TikTok</span>
+      <span className="text-xs text-gray-400 ml-auto">85 dang theo doi</span>
+  </div>
+   <div className="grid grid-cols-3 gap-1.5">
+     {['3,217', '5,634', '11,023'].map((count, i) => (
+     <div key={i} className="relative aspect-[3/4] rounded-xl overflow-hidden">
+    <img src={`https://placehold.co/120x160/c8a07a/fff?text=Video+${i + 1}`} alt="" className="w-full h-full object-cover" />
+        <span className="absolute bottom-1.5 left-1.5 text-[10px] text-white font-bold drop-shadow">{count}</span>
+          </div>
+        ))}
+              </div>
+   <div className="mt-3 flex justify-end gap-1">
+                <span className="text-xs text-gray-500">TikTok ·</span>
+ <a href="#" className="text-xs font-semibold" style={{ color: 'var(--craft-amber)' }}>Mo TikTok</a>
+         </div>
+      </div>
+          </div>
+     </div>
+      </section>
+
+      {/* 11. TIN TUC */}
+      <section className="max-w-7xl mx-auto px-4 py-14">
+        <div className="flex items-start justify-between mb-6">
+          <SectionHeading label="THU CONG SUDES CRAFT" title="Tin tuc moi nhat tu Sudes Craft" />
+          <NavArrows />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {BLOG_POSTS.map(post => (
+          <Link key={post.title} to="/blog" className="bg-white rounded-2xl overflow-hidden border transition-all hover:shadow-lg hover:-translate-y-1" style={{ borderColor: 'var(--craft-tan)' }}>
+ <div className="aspect-video overflow-hidden">
+         <img src={post.img} alt={post.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+       </div>
+              <div className="p-4 space-y-2">
+        <div className="flex items-center gap-2">
+     <span className="text-[10px] font-bold px-2 py-0.5 rounded-full text-white" style={{ backgroundColor: 'var(--craft-amber)' }}>{post.tag}</span>
+     <span className="text-xs" style={{ color: 'var(--craft-muted)' }}>{post.date}</span>
+      </div>
+        <h3 className="text-sm font-semibold line-clamp-2 leading-snug" style={{ color: 'var(--craft-brown)' }}>{post.title}</h3>
+            <span className="btn-ghost text-xs">Xem them</span>
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div className="text-center mt-8"><Link to="/blog" className="btn-outline px-10 py-3 text-sm">Xem them</Link></div>
+  </section>
+
+      {/* 12. SERVICE BADGES */}
+      <div style={{ borderTop: '1.5px solid var(--craft-tan)', borderBottom: '1.5px solid var(--craft-tan)' }}>
+        <div className="max-w-7xl mx-auto px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+          {SERVICES.map(s => (
+         <div key={s.title} className="flex items-start gap-3">
+   <span className="text-2xl flex-shrink-0">{s.icon}</span>
+      <div>
+      <p className="font-semibold text-sm" style={{ color: 'var(--craft-brown)' }}>{s.title}</p>
+       <p className="text-xs leading-relaxed" style={{ color: 'var(--craft-muted)' }}>{s.sub}</p>
+   </div>
+         </div>
+          ))}
+        </div>
+    </div>
+
+    </div>
+  );
+}

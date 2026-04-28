@@ -1,0 +1,208 @@
+﻿// src/components/layout/Header.jsx
+import { useState } from 'react';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+import {
+  ShoppingCart, Heart, Search, Menu, X,
+  LogOut, LayoutDashboard, User, ChevronDown, Phone
+} from 'lucide-react';
+import { useCartStore } from '../../store/cartStore';
+import { useAuthStore } from '../../store/authStore';
+
+const navLinks = [
+  { to: '/',         label: 'Trang chủ' },
+{ to: '/danh-muc',   label: 'Sản phẩm', hasDropdown: true },
+  { to: '/bo-suu-tap', label: 'Bộ sưu tập' },
+  { to: '/chinh-sach', label: 'Chính sách' },
+  { to: '/blog',     label: 'Tin tức' },
+  { to: '/dat-lich',   label: 'Liên hệ' },
+];
+
+const CATEGORIES_QUICK = [
+  { name: 'Giỏ & Khay', slug: 'gio-khay-dung-do' },
+  { name: 'Đèn Mây Tre', slug: 'den-may-tre-trang-tri' },
+  { name: 'Nội Thất TN', slug: 'do-noi-that-tu-nhien' },
+  { name: 'Phụ Kiện TC', slug: 'phu-kien-thoi-trang-thu-cong' },
+  { name: 'Gương Decor', slug: 'guong-trang-tri' },
+];
+
+export default function Header() {
+  const [menuOpen, setMenuOpen]= useState(false);
+  const [searchOpen, setSearchOpen]   = useState(false);
+  const [searchVal, setSearchVal]     = useState('');
+  const [userMenuOpen, setUserMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const items      = useCartStore(s => s.items);
+  const totalItems = items.reduce((s, i) => s + i.quantity, 0);
+  const { user, logout } = useAuthStore();
+
+  function handleSearch(e) {
+    e.preventDefault();
+    if (searchVal.trim()) {
+      navigate(`/danh-muc?q=${encodeURIComponent(searchVal.trim())}`);
+  setSearchOpen(false);
+      setSearchVal('');
+    }
+  }
+
+  return (
+    <>
+   {/* ── Top bar ─────────────────────────────────────── */}
+      <div style={{ backgroundColor: 'var(--craft-brown)' }} className="hidden md:block">
+        <div className="max-w-7xl mx-auto px-4 h-9 flex items-center justify-between text-xs text-amber-200">
+          <span className="flex items-center gap-1.5">
+        <Phone size={11} /> Hotline: <strong className="text-amber-300">1900 2345</strong>
+     &nbsp;·&nbsp; Giao hàng miễn phí cho đơn từ 500k
+ </span>
+          <div className="flex items-center gap-4">
+    <Link to="/dat-lich" className="hover:text-amber-300 transition-colors">Đặt lịch tư vấn</Link>
+     <Link to="/blog" className="hover:text-amber-300 transition-colors">Tin tức</Link>
+          </div>
+        </div>
+      </div>
+
+      {/* ── Main header ─────────────────────────────────── */}
+      <header className="sticky top-0 z-50 bg-white border-b border-stone-100 shadow-sm">
+    <div className="max-w-7xl mx-auto px-4 h-16 flex items-center gap-4">
+
+      {/* Logo */}
+          <Link to="/" className="flex-shrink-0 flex items-center gap-2.5 mr-4">
+      <div className="w-9 h-9 rounded-full flex items-center justify-center text-xl"
+         style={{ background: 'var(--craft-tan)' }}>
+              🧺
+   </div>
+            <div className="hidden sm:block leading-tight">
+    <span className="block font-bold text-base" style={{ fontFamily: "'Playfair Display',serif", color: 'var(--craft-brown)' }}>
+          Nội Thất
+              </span>
+      <span className="block text-[10px] font-semibold uppercase tracking-widest"
+          style={{ color: 'var(--craft-amber)' }}>Thủ Công Craft</span>
+            </div>
+          </Link>
+
+          {/* Nav desktop */}
+          <nav className="hidden lg:flex items-center gap-0.5 flex-1">
+     {navLinks.map(l => (
+  <NavLink key={l.to} to={l.to} end={l.to === '/'}
+       className={({ isActive }) =>
+     `flex items-center gap-0.5 px-3 py-2 text-sm font-medium rounded-lg transition-colors
+         ${isActive ? 'text-amber-600 bg-amber-50' : 'text-stone-600 hover:text-amber-600 hover:bg-amber-50'}`
+       }>
+ {l.label}
+    {l.hasDropdown && <ChevronDown size={12} />}
+  </NavLink>
+            ))}
+    </nav>
+
+          {/* Right actions */}
+          <div className="flex items-center gap-1 ml-auto">
+            {/* Search toggle */}
+  <button onClick={() => setSearchOpen(v => !v)}
+   className="p-2 rounded-full hover:bg-amber-50 transition-colors text-stone-500 hover:text-amber-600">
+     <Search size={19} />
+       </button>
+
+       <Link to="/wishlist"
+  className="p-2 rounded-full hover:bg-amber-50 transition-colors text-stone-500 hover:text-amber-600">
+              <Heart size={19} />
+            </Link>
+
+      <Link to="/gio-hang"
+       className="relative p-2 rounded-full hover:bg-amber-50 transition-colors text-stone-500 hover:text-amber-600">
+        <ShoppingCart size={19} />
+           {totalItems > 0 && (
+    <span className="absolute -top-0.5 -right-0.5 w-4 h-4 rounded-full text-[9px] font-bold text-white flex items-center justify-center"
+        style={{ backgroundColor: 'var(--craft-amber)' }}>
+  {totalItems > 9 ? '9+' : totalItems}
+     </span>
+            )}
+         </Link>
+
+      {/* User */}
+       {user ? (
+       <div className="relative ml-1">
+          <button onClick={() => setUserMenuOpen(v => !v)}
+      className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border transition-colors text-sm font-medium"
+          style={{ borderColor: 'var(--craft-tan)', color: 'var(--craft-brown)' }}>
+       <div className="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white"
+              style={{ backgroundColor: 'var(--craft-amber)' }}>
+        {user.fullName[0]}
+         </div>
+      <span className="hidden md:block max-w-[80px] truncate">{user.fullName.split(' ').pop()}</span>
+       </button>
+         {userMenuOpen && (
+       <div className="absolute right-0 top-full mt-2 w-52 bg-white rounded-2xl shadow-xl border border-stone-100 py-2 z-50">
+       <div className="px-4 py-2 border-b border-stone-100 mb-1">
+        <p className="text-xs font-semibold text-stone-800">{user.fullName}</p>
+   <p className="text-xs text-stone-400 truncate">{user.email}</p>
+         </div>
+        <Link to="/tai-khoan/don-hang" onClick={() => setUserMenuOpen(false)}
+            className="flex items-center gap-2.5 px-4 py-2 text-sm text-stone-600 hover:bg-amber-50 hover:text-amber-700">
+        <User size={14} /> Đơn hàng của tôi
+    </Link>
+     {user.role === 'Admin' && (
+      <Link to="/admin" onClick={() => setUserMenuOpen(false)}
+      className="flex items-center gap-2.5 px-4 py-2 text-sm hover:bg-amber-50"
+   style={{ color: 'var(--craft-amber)' }}>
+        <LayoutDashboard size={14} /> Admin Dashboard
+       </Link>
+  )}
+             <div className="border-t border-stone-100 mt-1">
+              <button onClick={() => { logout(); setUserMenuOpen(false); }}
+                    className="flex items-center gap-2.5 w-full px-4 py-2 text-sm text-red-500 hover:bg-red-50">
+    <LogOut size={14} /> Đăng xuất
+      </button>
+     </div>
+   </div>
+           )}
+    </div>
+            ) : (
+ <Link to="/dang-nhap" className="ml-1 btn-primary text-xs py-2 px-4">
+ Đăng nhập
+      </Link>
+            )}
+
+   <button className="lg:hidden p-2 ml-1 text-stone-600" onClick={() => setMenuOpen(v => !v)}>
+       {menuOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
+          </div>
+     </div>
+
+        {/* Search bar overlay */}
+        {searchOpen && (
+ <div className="border-t border-stone-100 bg-white px-4 py-3">
+  <form onSubmit={handleSearch} className="max-w-lg mx-auto">
+     <div className="relative">
+  <Search size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-stone-400" />
+     <input autoFocus value={searchVal} onChange={e => setSearchVal(e.target.value)}
+     placeholder="Tìm giỏ mây, đèn tre, gương decor..."
+      className="input pl-10 rounded-full"
+          style={{ borderColor: 'var(--craft-tan)' }} />
+             <button type="submit" className="absolute right-2 top-1/2 -translate-y-1/2 btn-primary text-xs py-1.5 px-4">
+     Tìm
+    </button>
+   </div>
+            </form>
+          </div>
+        )}
+
+        {/* Mobile menu */}
+        {menuOpen && (
+ <div className="lg:hidden border-t bg-white px-4 pb-5" style={{ borderColor: 'var(--craft-tan)' }}>
+            <form onSubmit={handleSearch} className="mt-3 mb-3">
+<input value={searchVal} onChange={e => setSearchVal(e.target.value)}
+                placeholder="Tìm kiếm sản phẩm..." className="input text-sm" />
+            </form>
+            {navLinks.map(l => (
+ <Link key={l.to} to={l.to} onClick={() => setMenuOpen(false)}
+           className="block py-3 text-sm font-medium border-b"
+     style={{ color: 'var(--craft-brown)', borderColor: 'var(--craft-tan)' }}>
+   {l.label}
+   </Link>
+         ))}
+     </div>
+        )}
+      </header>
+    </>
+  );
+}

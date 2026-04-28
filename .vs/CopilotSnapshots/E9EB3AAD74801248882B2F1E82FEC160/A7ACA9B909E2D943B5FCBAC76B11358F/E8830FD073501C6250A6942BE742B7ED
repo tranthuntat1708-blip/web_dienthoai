@@ -1,0 +1,25 @@
+﻿import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [
+  react(),
+  tailwindcss(),
+  ],
+  // Cho phép Vite import ảnh jpg/png/webp/gif làm asset
+  assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.webp', '**/*.gif'],
+  server: {
+    port: 61348,  // Khớp với SpaProxyServerUrl trong .csproj
+    strictPort: true, // Lỗi nếu port đã bị chiếm, không tự đổi
+    https: true, // SpaProxyServerUrl dùng https://
+    proxy: {
+      '/api': {
+        target: 'https://localhost:7123',
+        changeOrigin: true,
+        secure: false, // Bỏ qua self-signed cert khi dev
+      },
+    },
+  },
+})

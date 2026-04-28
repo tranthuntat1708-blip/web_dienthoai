@@ -1,0 +1,78 @@
+﻿// src/components/layout/Footer.jsx
+import { Link } from 'react-router-dom';
+import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
+
+export default function Footer() {
+  return (
+    <footer className="bg-gray-900 text-gray-300 mt-20">
+      <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* Brand */}
+        <div>
+          <div className="flex items-center gap-2 mb-3">
+      <span className="text-2xl">🏮</span>
+     <span className="text-white font-bold text-lg">Nội Thất Thủ Công</span>
+</div>
+          <p className="text-sm text-gray-400 leading-relaxed">
+      Nền tảng trưng bày và mua sắm đồ nội thất thủ công cao cấp. Mỗi sản phẩm là một câu chuyện văn hóa độc đáo.
+          </p>
+          <div className="flex gap-3 mt-4">
+    <a href="#" className="p-2 rounded-full bg-gray-800 hover:bg-amber-600 transition-colors">
+    <Facebook size={16} />
+          </a>
+   <a href="#" className="p-2 rounded-full bg-gray-800 hover:bg-amber-600 transition-colors">
+       <Instagram size={16} />
+     </a>
+ </div>
+        </div>
+
+    {/* Danh mục nhanh */}
+  <div>
+ <h4 className="text-white font-semibold mb-3">Danh mục</h4>
+     <ul className="space-y-2 text-sm">
+            {['Giỏ & Khay Đựng Đồ', 'Đèn Mây Tre', 'Gương Trang Trí', 'Kệ & Giá Treo', 'Trang Trí Tường'].map(c => (
+ <li key={c}>
+   <Link to="/danh-muc" className="hover:text-amber-400 transition-colors">{c}</Link>
+      </li>
+  ))}
+        </ul>
+        </div>
+
+     {/* Hỗ trợ */}
+        <div>
+          <h4 className="text-white font-semibold mb-3">Hỗ trợ</h4>
+          <ul className="space-y-2 text-sm">
+     {[
+       { to: '/dat-lich', label: 'Đặt lịch tư vấn' },
+ { to: '/tai-khoan/don-hang', label: 'Theo dõi đơn hàng' },
+        { to: '/blog', label: 'Blog & Lookbook' },
+  ].map(l => (
+     <li key={l.to}>
+     <Link to={l.to} className="hover:text-amber-400 transition-colors">{l.label}</Link>
+   </li>
+  ))}
+        </ul>
+        </div>
+
+        {/* Liên hệ */}
+        <div>
+          <h4 className="text-white font-semibold mb-3">Liên hệ</h4>
+  <ul className="space-y-3 text-sm">
+      <li className="flex items-start gap-2">
+    <MapPin size={14} className="mt-0.5 flex-shrink-0 text-amber-500" />
+       123 Đường Nội Thất, Q.1, TP.HCM
+    </li>
+ <li className="flex items-center gap-2">
+        <Phone size={14} className="text-amber-500" /> 0901 234 567
+     </li>
+      <li className="flex items-center gap-2">
+   <Mail size={14} className="text-amber-500" /> info@noithat.vn
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="border-t border-gray-800 py-4 text-center text-xs text-gray-500">
+     © 2025 Nội Thất Thủ Công. All rights reserved.
+      </div>
+    </footer>
+  );
+}

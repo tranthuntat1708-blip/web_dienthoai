@@ -1,0 +1,34 @@
+﻿import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+import path from 'path'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss(),
+  ],
+  // Cho phép Vite import ảnh jpg/png/webp/gif làm asset
+  assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.webp', '**/*.gif'],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://localhost:7123',
+        changeOrigin: true,
+        secure: false,
+      },
+      // Serve ảnh local từ src/assets/imgs khi dev
+      '/assets': {
+        target: 'https://localhost:7001',
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+  },
+})

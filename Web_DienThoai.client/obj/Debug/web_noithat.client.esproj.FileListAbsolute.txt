@@ -1,0 +1,2 @@
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\web_noithat.client\obj\Debug\web_noithat.client.esproj.CoreCompileInputs.cache
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\web_noithat.client\obj\Debug\web_noithat.client.esproj.CoreCompileInputs.cache

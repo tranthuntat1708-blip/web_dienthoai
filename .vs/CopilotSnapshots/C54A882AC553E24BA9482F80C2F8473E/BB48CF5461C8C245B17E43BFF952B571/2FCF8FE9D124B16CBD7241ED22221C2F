@@ -1,0 +1,123 @@
+﻿// src/components/product/ProductFilter.jsx
+// Bộ lọc đa chiều: Chất liệu, Phong cách, Khoảng giá, Màu sắc
+
+/**
+ * @param {{
+ *   filters: import('../../types/product').ProductFilterParams,
+ *   onChange: (filters: Partial<import('../../types/product').ProductFilterParams>) => void
+ * }} props
+ */
+export default function ProductFilter({ filters, onChange }) {
+  const materials = ['Mây', 'Tre', 'Gỗ', 'Cói', 'Lục bình', 'Gốm', 'Xi măng', 'Vải', 'Da', 'Kính'];
+  const styles = ['Minimalist', 'Indochine', 'Scandinavian', 'Classic', 'Industrial'];
+  const sortOptions = [
+    { value: 'newest',      label: 'Mới nhất' },
+    { value: 'price_asc',   label: 'Giá tăng dần' },
+    { value: 'price_desc',  label: 'Giá giảm dần' },
+    { value: 'best_seller', label: 'Bán chạy nhất' },
+  ];
+
+  function FilterSection({ title, children }) {
+    return (
+      <div>
+   <h4 className="font-semibold text-sm text-gray-800 mb-3">{title}</h4>
+        {children}
+   </div>
+    );
+  }
+
+  const priceFields = [
+    { key: 'minPrice', ph: 'Từ',  val: filters.minPrice },
+    { key: 'maxPrice', ph: 'Đến', val: filters.maxPrice },
+  ];
+
+  const quickRanges = [
+    [0, 500000, '<500k'],
+  [500000, 2000000, '500k-2M'],
+    [2000000, 999999999, '>2M'],
+  ];
+
+  return (
+    <aside className="space-y-6 bg-white rounded-2xl border border-gray-100 p-5 sticky top-20">
+      {/* Sắp xếp */}
+      <FilterSection title="Sắp xếp">
+        <select value={filters.sortBy ?? 'newest'}
+      onChange={e => onChange({ sortBy: e.target.value })}
+          className="input text-sm w-full">
+          {sortOptions.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
+        </select>
+      </FilterSection>
+
+    {/* Chất liệu */}
+      <FilterSection title="Chất liệu">
+    <div className="space-y-1.5">
+ {materials.map(m => (
+      <label key={m} className="flex items-center gap-2 text-sm cursor-pointer">
+              <input type="radio" name="material" value={m}
+checked={filters.material === m}
+           onChange={() => onChange({ material: m })}
+        className="accent-amber-500" />
+  {m}
+       </label>
+     ))}
+          <label className="flex items-center gap-2 text-sm cursor-pointer text-gray-400">
+          <input type="radio" name="material" value=""
+         checked={!filters.material}
+    onChange={() => onChange({ material: undefined })}
+ className="accent-amber-500" />
+            Tất cả
+      </label>
+        </div>
+      </FilterSection>
+
+    {/* Phong cách */}
+      <FilterSection title="Phong cách">
+  <div className="space-y-1.5">
+       {styles.map(s => (
+       <label key={s} className="flex items-center gap-2 text-sm cursor-pointer">
+              <input type="radio" name="style" value={s}
+        checked={filters.style === s}
+onChange={() => onChange({ style: s })}
+  className="accent-amber-500" />
+     {s}
+   </label>
+          ))}
+          <label className="flex items-center gap-2 text-sm cursor-pointer text-gray-400">
+            <input type="radio" name="style" value=""
+     checked={!filters.style}
+  onChange={() => onChange({ style: undefined })}
+   className="accent-amber-500" />
+       Tất cả
+   </label>
+        </div>
+      </FilterSection>
+
+      {/* Khoảng giá */}
+   <FilterSection title="Khoảng giá (VNĐ)">
+        <div className="flex gap-2">
+          {priceFields.map(f => (
+      <input key={f.key} type="number" placeholder={f.ph}
+         value={f.val ?? ''} className="input text-sm flex-1"
+   onChange={e => onChange({ [f.key]: e.target.value ? Number(e.target.value) : undefined })} />
+          ))}
+        </div>
+        <div className="flex flex-wrap gap-1.5 mt-2">
+{quickRanges.map(([min, max, label]) => (
+            <button key={label}
+  onClick={() => onChange({ minPrice: min, maxPrice: max })}
+   className="text-xs px-2 py-1 rounded-full border border-gray-200 hover:border-amber-400 hover:text-amber-600 transition-colors">
+      {label}
+  </button>
+          ))}
+        </div>
+      </FilterSection>
+
+      {/* Clear all */}
+   <button
+        onClick={() => onChange({ material: undefined, style: undefined, minPrice: undefined, maxPrice: undefined })}
+        className="text-xs text-gray-400 hover:text-red-500 transition-colors w-full text-center">
+        Xóa tất cả bộ lọc
+      </button>
+    </aside>
+  );
+}

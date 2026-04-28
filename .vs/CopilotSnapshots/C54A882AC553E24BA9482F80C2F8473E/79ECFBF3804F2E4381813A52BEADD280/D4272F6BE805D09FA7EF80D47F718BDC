@@ -1,0 +1,765 @@
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Web_NoiThat.Server.Models;
+
+namespace Web_NoiThat.Server.Data;
+
+/// <summary>
+/// Seed dữ liệu mẫu nội thất thủ công / trang trí vào SQL Server.
+/// Chỉ chạy khi database còn trống (kiểm tra bảng Categories).
+/// </summary>
+public static class DbSeeder
+{
+ public static async Task SeedAsync(
+        AppDbContext db,
+        UserManager<AppUser> userManager,
+        RoleManager<IdentityRole> roleManager)
+    {
+        // ── 1. Roles ──────────────────────────────────────────
+        foreach (var role in new[] { "Admin", "Customer" })
+    {
+         if (!await roleManager.RoleExistsAsync(role))
+   await roleManager.CreateAsync(new IdentityRole(role));
+        }
+
+        // ── 2. Admin user ─────────────────────────────────────
+        const string adminEmail = "admin@noithat.vn";
+  if (await userManager.FindByEmailAsync(adminEmail) is null)
+        {
+    var admin = new AppUser
+    {
+          UserName = adminEmail,
+        Email = adminEmail,
+       FullName = "Quản trị viên",
+  EmailConfirmed = true
+            };
+await userManager.CreateAsync(admin, "Admin@123456");
+            await userManager.AddToRoleAsync(admin, "Admin");
+        }
+
+        // ── 3. Categories ─────────────────────────────────────
+        if (await db.Categories.AnyAsync()) return; // Skip nếu đã seed
+
+        // ────────────────────────────────────────────────────────
+        // 10 DANH MỤC CHÍNH theo PRD (nội thất thủ công / decor)
+     // Schema: Id | Name | Slug | Description | Icon | SortOrder
+  // ────────────────────────────────────────────────────────
+        var catGioKhay = new Category
+        {
+        Name   = "Giỏ & Khay Đựng Đồ",
+         Slug = "gio-khay-dung-do",
+            Description = "Giỏ đan thủ công từ mây, tre, lục bình. Khay gỗ, khay kim loại trang trí và đựng đồ đa năng.",
+ ImageUrl    = "https://placehold.co/400x300?text=Gio+Khay",
+      Icon   = "🧺",
+     SortOrder   = 1,
+  IsActive    = true,
+        };
+        var catDenMay = new Category
+        {
+       Name        = "Đèn Mây Tre Trang Trí",
+     Slug        = "den-may-tre-trang-tri",
+     Description = "Đèn thả, đèn bàn, đèn treo tường làm từ mây tre đan thủ công. Tạo không gian ấm cúng, gần gũi thiên nhiên.",
+ ImageUrl    = "https://placehold.co/400x300?text=Den+May+Tre",
+    Icon        = "🏮",
+            SortOrder   = 2,
+            IsActive    = true,
+ };
+     var catNoiThatTuNhien = new Category
+        {
+     Name        = "Đồ Nội Thất Tự Nhiên",
+          Slug   = "do-noi-that-tu-nhien",
+            Description = "Bàn, ghế, kệ, tủ được làm từ gỗ tự nhiên, tre, mây. Thân thiện môi trường, bền đẹp theo thời gian.",
+  ImageUrl    = "https://placehold.co/400x300?text=Noi+That+Tu+Nhien",
+   Icon        = "🌿",
+          SortOrder   = 3,
+       IsActive    = true,
+  };
+        var catPhuKienThuCong = new Category
+        {
+            Name        = "Phụ Kiện Thời Trang Thủ Công",
+   Slug     = "phu-kien-thoi-trang-thu-cong",
+Description = "Túi xách, ví, nón, thắt lưng đan tay từ cói, mây, da thuộc. Sản phẩm thủ công độc đáo mang bản sắc Việt.",
+            ImageUrl    = "https://placehold.co/400x300?text=Phu+Kien+Thu+Cong",
+            Icon        = "👜",
+        SortOrder   = 4,
+  IsActive    = true,
+ };
+    var catGuong = new Category
+        {
+ Name= "Gương Trang Trí",
+            Slug        = "guong-trang-tri",
+   Description = "Gương treo tường khung gỗ, khung mây tre, gương tròn, gương đa giác. Trang trí và phản chiếu ánh sáng tự nhiên.",
+            ImageUrl = "https://placehold.co/400x300?text=Guong+Trang+Tri",
+        Icon        = "🪞",
+            SortOrder   = 5,
+            IsActive    = true,
+        };
+      var catKeTreo = new Category
+        {
+  Name        = "Kệ & Giá Treo Decor",
+            Slug        = "ke-gia-treo-decor",
+      Description = "Kệ gỗ nổi, giá treo tường, kệ góc, kệ tre trúc. Trưng bày cây xanh, sách, đồ trang trí theo phong cách tối giản.",
+         ImageUrl    = "https://placehold.co/400x300?text=Ke+Gia+Treo",
+            Icon        = "🪵",
+   SortOrder   = 6,
+            IsActive    = true,
+        };
+        var catTrangTriTuong = new Category
+        {
+       Name        = "Trang Trí Tường",
+  Slug        = "trang-tri-tuong",
+   Description = "Tranh treo tường, macramé, phù điêu gỗ, đồng hồ treo tường thủ công. Biến bức tường thành điểm nhấn nghệ thuật.",
+            ImageUrl    = "https://placehold.co/400x300?text=Trang+Tri+Tuong",
+        Icon  = "🖼️",
+            SortOrder   = 7,
+   IsActive    = true,
+ };
+        var catLoHoa = new Category
+        {
+            Name        = "Lọ Hoa & Chậu Cây Decor",
+    Slug   = "lo-hoa-chau-cay-decor",
+ Description = "Lọ gốm thủ công, lọ mây tre, chậu đất nung, chậu xi măng trang trí. Phù hợp cây nội thất và cắm hoa tươi/khô.",
+      ImageUrl  = "https://placehold.co/400x300?text=Lo+Hoa+Chau+Cay",
+            Icon  = "🪴",
+      SortOrder   = 8,
+   IsActive    = true,
+        };
+        var catQuaTang = new Category
+        {
+         Name        = "Quà Tặng Thủ Công",
+            Slug   = "qua-tang-thu-cong",
+   Description = "Hộp quà, set quà tặng thủ công cao cấp. Phù hợp làm quà biếu, quà cưới, quà doanh nghiệp mang đậm chất Việt.",
+      ImageUrl    = "https://placehold.co/400x300?text=Qua+Tang+Thu+Cong",
+            Icon    = "🎁",
+     SortOrder   = 9,
+        IsActive    = true,
+      };
+        var catBoSuuTap = new Category
+        {
+    Name        = "Bộ Sưu Tập",
+  Slug      = "bo-suu-tap",
+          Description = "Các bộ sưu tập giới hạn theo mùa, chủ đề hoặc nghệ nhân. Mỗi BST kể một câu chuyện văn hóa độc đáo.",
+            ImageUrl    = "https://placehold.co/400x300?text=Bo+Suu+Tap",
+        Icon   = "✨",
+     SortOrder   = 10,
+     IsActive    = true,
+        };
+
+        var allCategories = new List<Category>
+        {
+       catGioKhay, catDenMay, catNoiThatTuNhien, catPhuKienThuCong,
+         catGuong, catKeTreo, catTrangTriTuong, catLoHoa, catQuaTang, catBoSuuTap,
+        };
+   db.Categories.AddRange(allCategories);
+      await db.SaveChangesAsync();
+
+ // ── Sub-categories (ví dụ cấu trúc cây cho "Đồ Nội Thất Tự Nhiên") ──
+        var subCategories = new List<Category>
+        {
+ new()
+     {
+    Name = "Bàn Ghế Tre Trúc", Slug = "ban-ghe-tre-truc",
+            Description = "Bàn ghế làm từ tre trúc nguyên ống hoặc ép thanh.",
+     Icon = "🪑", SortOrder = 1, IsActive = true,
+          ParentCategoryId = catNoiThatTuNhien.Id,
+         ImageUrl = "https://placehold.co/400x300?text=Ban+Ghe+Tre",
+            },
+       new()
+            {
+       Name = "Kệ & Tủ Gỗ Thô", Slug = "ke-tu-go-tho",
+                Description = "Kệ gỗ thô nguyên tấm, tủ gỗ sẻ thủ công không sơn PU.",
+       Icon = "🗄️", SortOrder = 2, IsActive = true,
+     ParentCategoryId = catNoiThatTuNhien.Id,
+       ImageUrl = "https://placehold.co/400x300?text=Ke+Go+Tho",
+  },
+      new()
+            {
+     Name = "Đèn Treo Trần Mây", Slug = "den-treo-tran-may",
+    Description = "Đèn thả trần đan mây, phù hợp nhà hàng và không gian sống.",
+      Icon = "💡", SortOrder = 1, IsActive = true,
+       ParentCategoryId = catDenMay.Id,
+             ImageUrl = "https://placehold.co/400x300?text=Den+Treo+Tran",
+   },
+        new()
+            {
+                Name = "Đèn Bàn Tre Thủ Công", Slug = "den-ban-tre-thu-cong",
+          Description = "Đèn bàn thân tre, chao đèn đan thủ công, ánh sáng ấm áp.",
+     Icon = "🕯️", SortOrder = 2, IsActive = true,
+      ParentCategoryId = catDenMay.Id,
+    ImageUrl = "https://placehold.co/400x300?text=Den+Ban+Tre",
+   },
+      };
+        db.Categories.AddRange(subCategories);
+        await db.SaveChangesAsync();
+
+        // ── 4. Products — 2-3 sản phẩm mẫu cho mỗi category chính ───────
+        var products = new List<Product>
+        {
+// ════════════════════════════════════════════════════
+   // 1. GIỎ & KHAY ĐỰNG ĐỒ
+     // ════════════════════════════════════════════════════
+            new()
+  {
+          Name        = "Giỏ Đựng Đồ Lục Bình Oval Size L",
+          Slug        = "gio-dung-do-luc-binh-oval-size-l",
+   Description = "Giỏ đan từ lục bình khô 100% tự nhiên, hình oval, có nắp đậy. Dùng để đựng chăn gối, đồ chơi hoặc trang trí góc phòng.",
+        Price     = 320_000,
+      CategoryId  = catGioKhay.Id,
+         Material    = "Lục bình",
+  Style       = "Minimalist",
+         Color       = "Vàng kem tự nhiên",
+ LengthCm    = 50, WidthCm = 35, HeightCm = 40, WeightKg = 0.8,
+   Stock       = 45, SoldCount = 312,
+           MainImageUrl = "https://placehold.co/800x800?text=Gio+Luc+Binh+Oval",
+ SubImages   =
+[
+           new ProductImage { Url = "https://placehold.co/800x800?text=Gio+Luc+Binh+Nap",   SortOrder = 1 },
+      new ProductImage { Url = "https://placehold.co/800x800?text=Gio+Luc+Binh+Detail", SortOrder = 2 },
+        ],
+        },
+  new()
+    {
+           Name        = "Khay Tre Đựng Đồ Chữ Nhật 3 Ngăn",
+    Slug        = "khay-tre-dung-do-chu-nhat-3-ngan",
+       Description = "Khay tre đan tay 3 ngăn phân cách, sơn PU trong bảo vệ. Dùng trên bàn làm việc, kệ phòng tắm, bàn bếp.",
+    Price       = 185_000,
+         SalePrice   = 155_000,
+     IsOnSale    = true,
+     CategoryId  = catGioKhay.Id,
+          Material    = "Tre",
+         Style       = "Minimalist",
+                Color       = "Nâu tre tự nhiên",
+    LengthCm    = 30, WidthCm = 20, HeightCm = 8, WeightKg = 0.3,
+ Stock       = 80, SoldCount = 546,
+    MainImageUrl = "https://placehold.co/800x800?text=Khay+Tre+3+Ngan",
+        SubImages   =
+            [
+           new ProductImage { Url = "https://placehold.co/800x800?text=Khay+Tre+Top",   SortOrder = 1 },
+         new ProductImage { Url = "https://placehold.co/800x800?text=Khay+Tre+Usage",  SortOrder = 2 },
+           ],
+   },
+       new()
+        {
+                Name        = "Giỏ Mây Tròn Đựng Cây Nội Thất",
+          Slug        = "gio-may-tron-dung-cay-noi-that",
+           Description = "Giỏ mây đan trơn hình trụ tròn, không đáy, làm pot cover cho chậu cây nội thất. 3 size S/M/L.",
+                Price       = 220_000,
+         CategoryId  = catGioKhay.Id,
+          Material    = "Mây",
+                Style       = "Scandinavian",
+           Color       = "Trắng sữa",
+                LengthCm    = 20, WidthCm = 20, HeightCm = 22, WeightKg = 0.25,
+    Stock       = 60, SoldCount = 201,
+    MainImageUrl = "https://placehold.co/800x800?text=Gio+May+Cay",
+    },
+
+            // ════════════════════════════════════════════════════
+ // 2. ĐÈN MÂY TRE TRANG TRÍ
+ // ════════════════════════════════════════════════════
+  new()
+   {
+          Name        = "Đèn Thả Trần Mây Đan LOTUS",
+          Slug        = "den-tha-tran-may-dan-lotus",
+  Description = "Đèn thả trần hình bông sen, đan từ mây tự nhiên, chao đèn Ø50cm. Kèm bóng LED E27 warm white. Phù hợp phòng ăn, nhà hàng.",
+           Price       = 890_000,
+                SalePrice   = 750_000,
+             IsOnSale    = true,
+              CategoryId  = catDenMay.Id,
+     Material    = "Mây",
+     Style   = "Indochine",
+                Color     = "Nâu mật ong",
+ LengthCm    = 50, WidthCm = 50, HeightCm = 40, WeightKg = 1.2,
+      Stock       = 30, SoldCount = 178,
+  MainImageUrl = "https://placehold.co/800x800?text=Den+May+LOTUS",
+      SubImages   =
+ [
+  new ProductImage { Url = "https://placehold.co/800x800?text=Den+Lotus+On",     SortOrder = 1 },
+             new ProductImage { Url = "https://placehold.co/800x800?text=Den+Lotus+Detail", SortOrder = 2 },
+     new ProductImage { Url = "https://placehold.co/800x800?text=Den+Lotus+Room",   SortOrder = 3 },
+       ],
+       },
+            new()
+{
+ Name        = "Đèn Bàn Tre Thủ Công BAMBOO DESK",
+             Slug        = "den-ban-tre-thu-cong-bamboo-desk",
+           Description = "Đèn bàn thân tre nguyên ống, chao đèn đan bằng mây, bóng E14 4W kèm theo. Ánh sáng vàng ấm tạo không khí thư giãn.",
+     Price       = 450_000,
+     CategoryId  = catDenMay.Id,
+                Material    = "Tre",
+      Style       = "Indochine",
+  Color     = "Xanh tre tự nhiên",
+     LengthCm    = 18, WidthCm = 18, HeightCm = 45, WeightKg = 0.6,
+                Stock       = 25, SoldCount = 93,
+     MainImageUrl = "https://placehold.co/800x800?text=Den+Tre+Desk",
+        SubImages   =
+ [
+      new ProductImage { Url = "https://placehold.co/800x800?text=Bamboo+Desk+On",  SortOrder = 1 },
+   new ProductImage { Url = "https://placehold.co/800x800?text=Bamboo+Desk+Off", SortOrder = 2 },
+      ],
+     },
+
+            // ════════════════════════════════════════════════════
+            // 3. ĐỒ NỘI THẤT TỰ NHIÊN
+            // ════════════════════════════════════════════════════
+   new()
+ {
+       Name      = "Bàn Cà Phê Gỗ Tràm Nguyên Tấm SLAB",
+        Slug     = "ban-ca-phe-go-tram-nguyen-tam-slab",
+        Description = "Mặt bàn gỗ tràm nguyên tấm live-edge (vân gỗ tự nhiên giữ nguyên), chân chữ A gỗ thô, dầu bảo dưỡng không sơn PU. Mỗi chiếc là độc bản.",
+  Price       = 3_200_000,
+        CategoryId  = catNoiThatTuNhien.Id,
+    Material    = "Gỗ",
+            Style       = "Minimalist",
+    Color       = "Nâu gỗ tự nhiên",
+       LengthCm    = 90, WidthCm = 55, HeightCm = 42, WeightKg = 15,
+     Stock       = 8, SoldCount = 67,
+        MainImageUrl = "https://placehold.co/800x800?text=Ban+Go+Tram+Slab",
+        SubImages   =
+           [
+        new ProductImage { Url = "https://placehold.co/800x800?text=Slab+Grain",  SortOrder = 1 },
+ new ProductImage { Url = "https://placehold.co/800x800?text=Slab+Leg", SortOrder = 2 },
+    new ProductImage { Url = "https://placehold.co/800x800?text=Slab+Room",   SortOrder = 3 },
+         ],
+            },
+            new()
+            {
+      Name      = "Ghế Bập Bênh Tre ROCKING BAMBOO",
+     Slug   = "ghe-bap-benh-tre-rocking-bamboo",
+  Description = "Ghế bập bênh khung tre nguyên ống, đệm vải canvas 100% cotton tháo giặt được. Sản phẩm thủ công từ làng nghề Hà Nội.",
+       Price       = 2_800_000,
+                SalePrice   = 2_400_000,
+    IsOnSale    = true,
+                CategoryId  = catNoiThatTuNhien.Id,
+       Material    = "Tre",
+         Style       = "Indochine",
+    Color       = "Xanh tre + Kem",
+  LengthCm    = 95, WidthCm = 65, HeightCm = 110, WeightKg = 9,
+                Stock       = 12, SoldCount = 145,
+                MainImageUrl = "https://placehold.co/800x800?text=Ghe+Tre+Rocking",
+         SubImages   =
+        [
+         new ProductImage { Url = "https://placehold.co/800x800?text=Rocking+Side",   SortOrder = 1 },
+  new ProductImage { Url = "https://placehold.co/800x800?text=Rocking+Cushion",SortOrder = 2 },
+     ],
+  },
+
+            // ════════════════════════════════════════════════════
+            // 4. PHỤ KIỆN THỜI TRANG THỦ CÔNG
+         // ════════════════════════════════════════════════════
+        new()
+            {
+                Name      = "Túi Xách Cói Đan Tay COASTAL",
+    Slug        = "tui-xach-coi-dan-tay-coastal",
+         Description = "Túi xách tay đan từ cói biển tự nhiên, lót vải chống thấm, khóa gỗ trang trí. Phong cách boho-coastal. Size 38x28cm.",
+                Price       = 380_000,
+     CategoryId  = catPhuKienThuCong.Id,
+                Material    = "Cói",
+        Style= "Minimalist",
+Color       = "Nâu cói tự nhiên",
+            LengthCm    = 38, WidthCm = 12, HeightCm = 28, WeightKg = 0.35,
+              Stock       = 50, SoldCount = 432,
+    MainImageUrl = "https://placehold.co/800x800?text=Tui+Coi+Coastal",
+    SubImages   =
+   [
+           new ProductImage { Url = "https://placehold.co/800x800?text=Coastal+Open",  SortOrder = 1 },
+            new ProductImage { Url = "https://placehold.co/800x800?text=Coastal+Lining",SortOrder = 2 },
+  new ProductImage { Url = "https://placehold.co/800x800?text=Coastal+Wear",  SortOrder = 3 },
+    ],
+            },
+ new()
+            {
+       Name    = "Nón Cói Vành Rộng Thêu Tay BLOOM",
+    Slug        = "non-coi-vanh-rong-theu-tay-bloom",
+           Description = "Nón cói vành 12cm, thêu tay hoa dại, dây buộc vải linen. Bảo vệ tia UV, nhẹ và thoáng. Size 56-58cm điều chỉnh được.",
+                Price       = 290_000,
+            SalePrice   = 240_000,
+  IsOnSale    = true,
+   CategoryId  = catPhuKienThuCong.Id,
+           Material    = "Cói",
+     Style       = "Classic",
+       Color       = "Vàng cói + Hoa nhiều màu",
+     WeightKg    = 0.15,
+    Stock       = 35, SoldCount = 289,
+         MainImageUrl = "https://placehold.co/800x800?text=Non+Coi+Bloom",
+       SubImages   =
+         [
+   new ProductImage { Url = "https://placehold.co/800x800?text=Bloom+Top",    SortOrder = 1 },
+    new ProductImage { Url = "https://placehold.co/800x800?text=Bloom+Embroider",SortOrder = 2 },
+                ],
+   },
+
+       // ════════════════════════════════════════════════════
+ // 5. GƯƠNG TRANG TRÍ
+            // ════════════════════════════════════════════════════
+          new()
+            {
+           Name      = "Gương Tròn Khung Mây BOHO CIRCLE",
+                Slug        = "guong-tron-khung-may-boho-circle",
+          Description = "Gương tròn Ø60cm, viền khung mây đan tay dày 8cm, treo tường hoặc dựng sàn. Phong cách Boho-Scandi, làm sáng và rộng không gian.",
+    Price = 650_000,
+ CategoryId  = catGuong.Id,
+ Material    = "Mây",
+  Style       = "Scandinavian",
+ Color       = "Nâu mây tự nhiên",
+     LengthCm    = 76, WidthCm = 76, HeightCm = 4, WeightKg = 2.5,
+ Stock       = 22, SoldCount = 187,
+    MainImageUrl = "https://placehold.co/800x800?text=Guong+May+Boho",
+          SubImages   =
+          [
+          new ProductImage { Url = "https://placehold.co/800x800?text=Boho+Front",  SortOrder = 1 },
+        new ProductImage { Url = "https://placehold.co/800x800?text=Boho+Frame",  SortOrder = 2 },
+            new ProductImage { Url = "https://placehold.co/800x800?text=Boho+Room",   SortOrder = 3 },
+       ],
+          },
+         new()
+        {
+       Name        = "Gương Đa Giác Khung Gỗ Sồi HEXAGON",
+       Slug        = "guong-da-giac-khung-go-soi-hexagon",
+  Description = "Gương lục giác 50x57cm, khung gỗ sồi ghép góc 45° chính xác. Có thể ghép thành cụm trang trí tường độc đáo.",
+          Price       = 480_000,
+    CategoryId  = catGuong.Id,
+             Material    = "Gỗ",
+     Style       = "Minimalist",
+Color       = "Sồi tự nhiên",
+                LengthCm    = 50, WidthCm = 57, HeightCm = 3, WeightKg = 1.8,
+         Stock       = 40, SoldCount = 324,
+        MainImageUrl = "https://placehold.co/800x800?text=Guong+Hexagon",
+       SubImages   =
+         [
+    new ProductImage { Url = "https://placehold.co/800x800?text=Hexagon+Single", SortOrder = 1 },
+    new ProductImage { Url = "https://placehold.co/800x800?text=Hexagon+Cluster",SortOrder = 2 },
+      ],
+      },
+
+   // ════════════════════════════════════════════════════
+    // 6. KỆ & GIÁ TREO DECOR
+            // ════════════════════════════════════════════════════
+ new()
+            {
+ Name        = "Kệ Gỗ Nổi Treo Tường FLOAT OAK 80cm",
+        Slug        = "ke-go-noi-treo-tuong-float-oak-80cm",
+    Description = "Kệ gỗ sồi tự nhiên 80x20cm, dày 3cm, bo góc tròn. Thanh treo ẩn chịu tải 15kg. Dùng trưng bày sách, cây xanh, đồ decor.",
+ Price       = 420_000,
+     CategoryId  = catKeTreo.Id,
+            Material    = "Gỗ",
+    Style     = "Minimalist",
+                Color  = "Sồi tự nhiên",
+                LengthCm    = 80, WidthCm = 20, HeightCm = 3, WeightKg = 2.2,
+     Stock   = 55, SoldCount = 678,
+       MainImageUrl = "https://placehold.co/800x800?text=Ke+Float+Oak",
+    SubImages   =
+           [
+          new ProductImage { Url = "https://placehold.co/800x800?text=Float+Install", SortOrder = 1 },
+         new ProductImage { Url = "https://placehold.co/800x800?text=Float+Usage",   SortOrder = 2 },
+   ],
+         },
+   new()
+  {
+              Name        = "Giá Treo Quần Áo Tre RACK BAMBOO",
+      Slug        = "gia-treo-quan-ao-tre-rack-bamboo",
+   Description = "Giá treo quần áo 2 tầng khung tre nguyên ống, chân chữ A vững chắc. Tải trọng 20kg. Kích thước 120x45x170cm.",
+       Price   = 980_000,
+                SalePrice   = 820_000,
+      IsOnSale    = true,
+      CategoryId  = catKeTreo.Id,
+         Material    = "Tre",
+       Style       = "Minimalist",
+     Color       = "Xanh tre tự nhiên",
+      LengthCm    = 120, WidthCm = 45, HeightCm = 170, WeightKg = 6.5,
+      Stock       = 18, SoldCount = 156,
+    MainImageUrl = "https://placehold.co/800x800?text=Rack+Bamboo",
+ SubImages   =
+              [
+        new ProductImage { Url = "https://placehold.co/800x800?text=Rack+Full",   SortOrder = 1 },
+          new ProductImage { Url = "https://placehold.co/800x800?text=Rack+Detail", SortOrder = 2 },
+   ],
+    },
+
+  // ════════════════════════════════════════════════════
+          // 7. TRANG TRÍ TƯỜNG
+       // ════════════════════════════════════════════════════
+        new()
+  {
+     Name        = "Macramé Treo Tường Sợi Cotton BOHO WALL",
+      Slug        = "macrame-treo-tuong-soi-cotton-boho-wall",
+        Description = "Tấm macramé thủ công 60x120cm, sợi cotton thô 3mm, que gỗ tần bì. Thắt nút handmade 100%, mỗi tấm là tác phẩm nghệ thuật duy nhất.",
+  Price       = 680_000,
+      CategoryId  = catTrangTriTuong.Id,
+             Material    = "Vải",
+    Style       = "Scandinavian",
+      Color       = "Trắng ivory",
+                LengthCm    = 60, WidthCm = 2, HeightCm = 120, WeightKg = 0.5,
+  Stock    = 20, SoldCount = 243,
+            MainImageUrl = "https://placehold.co/800x800?text=Macrame+Boho",
+   SubImages   =
+          [
+   new ProductImage { Url = "https://placehold.co/800x800?text=Macrame+Detail", SortOrder = 1 },
+     new ProductImage { Url = "https://placehold.co/800x800?text=Macrame+Room",   SortOrder = 2 },
+               new ProductImage { Url = "https://placehold.co/800x800?text=Macrame+Knot",   SortOrder = 3 },
+       ],
+            },
+            new()
+            {
+      Name    = "Phù Điêu Gỗ Trúc Chỉ Điêu Khắc FLORA",
+        Slug        = "phu-dieu-go-truc-chi-dieu-khac-flora",
+           Description = "Tranh phù điêu gỗ trúc chỉ khắc CNC hoa lá nhiệt đới, kích thước 80x40cm. Sơn lót nền trắng, sơn màu thủ công. Kèm đinh treo ẩn.",
+    Price     = 1_200_000,
+      SalePrice   = 980_000,
+        IsOnSale    = true,
+      CategoryId  = catTrangTriTuong.Id,
+      Material    = "Gỗ",
+     Style       = "Indochine",
+  Color       = "Trắng + Xanh lá",
+             LengthCm  = 80, WidthCm = 3, HeightCm = 40, WeightKg = 1.8,
+         Stock       = 15, SoldCount = 89,
+       MainImageUrl = "https://placehold.co/800x800?text=Phu+Dieu+Flora",
+                SubImages   =
+    [
+                    new ProductImage { Url = "https://placehold.co/800x800?text=Flora+Close",  SortOrder = 1 },
+      new ProductImage { Url = "https://placehold.co/800x800?text=Flora+Room",   SortOrder = 2 },
+          ],
+            },
+
+       // ════════════════════════════════════════════════════
+        // 8. LỌ HOA & CHẬU CÂY DECOR
+ // ════════════════════════════════════════════════════
+      new()
+         {
+                Name        = "Lọ Gốm Thủ Công Men Rạn WABI-SABI",
+                Slug = "lo-gom-thu-cong-men-ran-wabi-sabi",
+     Description = "Lọ gốm nung tay men rạn tự nhiên, cao 25cm, miệng loe 8cm. Phong cách Wabi-sabi Nhật Bản. Phù hợp cắm hoa khô, pampas, bông lúa.",
+     Price       = 350_000,
+    CategoryId  = catLoHoa.Id,
+                Material = "Gốm",
+      Style       = "Minimalist",
+         Color = "Xám trắng men rạn",
+  LengthCm    = 12, WidthCm = 12, HeightCm = 25, WeightKg = 0.9,
+             Stock       = 35, SoldCount = 412,
+MainImageUrl = "https://placehold.co/800x800?text=Lo+Gom+Wabi",
+    SubImages   =
+ [
+        new ProductImage { Url = "https://placehold.co/800x800?text=Wabi+Crack",  SortOrder = 1 },
+           new ProductImage { Url = "https://placehold.co/800x800?text=Wabi+Flower", SortOrder = 2 },
+ new ProductImage { Url = "https://placehold.co/800x800?text=Wabi+Group",  SortOrder = 3 },
+  ],
+          },
+  new()
+          {
+  Name        = "Chậu Xi Măng Thủ Công CEMENT POT Set 3",
+ Slug        = "chau-xi-mang-thu-cong-cement-pot-set-3",
+   Description = "Set 3 chậu xi măng đổ tay kích thước S/M/L (8/12/16cm), bề mặt thô tự nhiên, có lỗ thoát nước. Phù hợp cây xương rồng, succulent.",
+      Price       = 280_000,
+        CategoryId  = catLoHoa.Id,
+          Material    = "Xi măng",
+          Style   = "Industrial",
+       Color       = "Xám xi măng tự nhiên",
+           WeightKg    = 1.5,
+                Stock       = 60, SoldCount = 534,
+                MainImageUrl = "https://placehold.co/800x800?text=Cement+Pot+Set3",
+     SubImages   =
+      [
+  new ProductImage { Url = "https://placehold.co/800x800?text=Cement+Sizes",  SortOrder = 1 },
+  new ProductImage { Url = "https://placehold.co/800x800?text=Cement+Plants", SortOrder = 2 },
+                ],
+            },
+
+            // ════════════════════════════════════════════════════
+         // 9. QUÀ TẶNG THỦ CÔNG
+            // ════════════════════════════════════════════════════
+       new()
+        {
+     Name= "Set Quà Tặng Hộp Mây Tre GIFT BOX Premium",
+  Slug        = "set-qua-tang-hop-may-tre-gift-box-premium",
+  Description = "Hộp quà đan mây kích thước 35x25x15cm, bên trong gồm: 1 lọ tinh dầu, 1 nến thơm sáp ong, 1 miếng lót ly gỗ khắc laser. Kèm thiệp cứng và dây ruy-băng.",
+           Price     = 580_000,
+                CategoryId  = catQuaTang.Id,
+             Material    = "Mây",
+ Style       = "Classic",
+        Color       = "Nâu mây + Vàng",
+        LengthCm    = 35, WidthCm = 25, HeightCm = 15, WeightKg = 0.8,
+    Stock       = 30, SoldCount = 156,
+          MainImageUrl = "https://placehold.co/800x800?text=Gift+Box+Premium",
+           SubImages   =
+ [
+       new ProductImage { Url = "https://placehold.co/800x800?text=Gift+Open",  SortOrder = 1 },
+         new ProductImage { Url = "https://placehold.co/800x800?text=Gift+Contents",  SortOrder = 2 },
+     new ProductImage { Url = "https://placehold.co/800x800?text=Gift+Wrapped",   SortOrder = 3 },
+      ],
+            },
+     new()
+            {
+      Name        = "Hộp Quà Cưới Lục Bình WEDDING BASKET",
+   Slug  = "hop-qua-cuoi-luc-binh-wedding-basket",
+     Description = "Giỏ quà cưới đan lục bình hình chữ nhật, có tay cầm, lót giấy kraft và giấy bông. Kèm tag gỗ khắc tên theo yêu cầu (miễn phí).",
+      Price   = 450_000,
+     SalePrice   = 380_000,
+       IsOnSale    = true,
+              CategoryId  = catQuaTang.Id,
+         Material    = "Lục bình",
+            Style       = "Classic",
+      Color = "Trắng kem tự nhiên",
+          LengthCm    = 40, WidthCm = 30, HeightCm = 20, WeightKg = 0.6,
+                Stock       = 25, SoldCount = 87,
+      MainImageUrl = "https://placehold.co/800x800?text=Wedding+Basket",
+      SubImages   =
+          [
+  new ProductImage { Url = "https://placehold.co/800x800?text=Wedding+Open",  SortOrder = 1 },
+    new ProductImage { Url = "https://placehold.co/800x800?text=Wedding+Tag",   SortOrder = 2 },
+        ],
+},
+
+            // ════════════════════════════════════════════════════
+            // 10. BỘ SƯU TẬP — Bộ sưu tập giới hạn theo chủ đề
+  // ════════════════════════════════════════════════════
+            new()
+            {
+     Name      = "BST Tết 2025 — Giỏ Lộc Đan Hoa Mai SPRING",
+  Slug    = "bst-tet-2025-gio-loc-dan-hoa-mai-spring",
+          Description = "Bộ sưu tập Tết giới hạn 2025. Giỏ lộc đan tay hình trụ, họa tiết hoa mai vàng truyền thống, dây thắt nút đỏ, thẻ bài lì xì kèm theo. Số lượng giới hạn 200 chiếc.",
+        Price   = 520_000,
+       SalePrice = 450_000,
+       IsOnSale    = true,
+         CategoryId  = catBoSuuTap.Id,
+          Material    = "Mây",
+         Style       = "Indochine",
+    Color       = "Vàng đỏ Tết",
+        LengthCm    = 20, WidthCm = 20, HeightCm = 25, WeightKg = 0.4,
+          Stock       = 200, SoldCount = 174,
+          MainImageUrl = "https://placehold.co/800x800?text=BST+Tet+2025",
+SubImages   =
+       [
+        new ProductImage { Url = "https://placehold.co/800x800?text=Tet+Front",    SortOrder = 1 },
+           new ProductImage { Url = "https://placehold.co/800x800?text=Tet+Pattern",SortOrder = 2 },
+      new ProductImage { Url = "https://placehold.co/800x800?text=Tet+Gift",     SortOrder = 3 },
+       new ProductImage { Url = "https://placehold.co/800x800?text=Tet+Group",    SortOrder = 4 },
+  ],
+            },
+    new()
+   {
+            Name = "BST Mùa Hè — Set Đèn Biển OCEAN BREEZE",
+           Slug        = "bst-mua-he-set-den-bien-ocean-breeze",
+     Description = "Bộ sưu tập mùa hè giới hạn. Set 3 đèn tealight hình vỏ sò đan mây, kèm nến sáp ong 6 tiếng. Gói trong túi vải linen xanh biển.",
+     Price  = 380_000,
+       CategoryId  = catBoSuuTap.Id,
+        Material    = "Mây",
+                Style= "Minimalist",
+       Color= "Trắng cát + Xanh biển",
+    WeightKg    = 0.5,
+             Stock       = 150, SoldCount = 98,
+    MainImageUrl = "https://placehold.co/800x800?text=BST+Ocean+Breeze",
+  SubImages   =
+       [
+          new ProductImage { Url = "https://placehold.co/800x800?text=Ocean+Set",   SortOrder = 1 },
+          new ProductImage { Url = "https://placehold.co/800x800?text=Ocean+Candle",SortOrder = 2 },
+ ],
+         },
+        };
+
+        db.Products.AddRange(products);
+        await db.SaveChangesAsync();
+
+    // ── 5. ProductBundles (Mua kèm) ───────────────────────
+     // Giỏ lục bình → mua kèm chậu cây + lọ gốm
+     db.ProductBundles.AddRange(
+            new ProductBundle { ProductId = products[0].Id,  BundledProductId = products[2].Id  }, // Giỏ oval → giỏ mây cây
+            new ProductBundle { ProductId = products[0].Id,  BundledProductId = products[18].Id }, // Giỏ oval → lọ gốm
+            // Đèn thả → mua kèm đèn bàn
+    new ProductBundle { ProductId = products[3].Id,  BundledProductId = products[4].Id  },
+  // Gương tròn → mua kèm kệ nổi
+     new ProductBundle { ProductId = products[9].Id,  BundledProductId = products[11].Id },
+            new ProductBundle { ProductId = products[10].Id, BundledProductId = products[11].Id },
+        // Set quà tặng → mua kèm giỏ cưới
+    new ProductBundle { ProductId = products[20].Id, BundledProductId = products[21].Id },
+      // BST Tết → mua kèm đèn mây
+new ProductBundle { ProductId = products[22].Id, BundledProductId = products[3].Id  },
+   new ProductBundle { ProductId = products[22].Id, BundledProductId = products[23].Id }
+      );
+
+        // ── 6. Flash Sale ─────────────────────────────────────
+        var flashSale = new FlashSale
+   {
+     Name     = "Flash Sale Cuối Tuần — Đồ Thủ Công",
+          StartAt  = DateTime.UtcNow,
+     EndAt    = DateTime.UtcNow.AddDays(2),
+  IsActive = true,
+ Items    =
+      [
+   new FlashSaleItem { ProductId = products[3].Id,  SalePrice = 620_000,  StockLimit = 10 },
+           new FlashSaleItem { ProductId = products[6].Id,  SalePrice = 1_980_000, StockLimit = 5  },
+              new FlashSaleItem { ProductId = products[9].Id,  SalePrice = 520_000,  StockLimit = 8  },
+             new FlashSaleItem { ProductId = products[22].Id, SalePrice = 390_000,  StockLimit = 50 },
+            ],
+    };
+      db.FlashSales.Add(flashSale);
+
+     // ── 7. Voucher ────────────────────────────────────────
+        db.Vouchers.AddRange(
+  new Voucher
+            {
+      Code        = "WELCOME10",
+             DiscountPercent  = 10,
+     MaxDiscountAmount = 200_000,
+          MinOrderAmount   = 500_000,
+             MaxUsageCount    = 500,
+   ExpiresAt        = DateTime.UtcNow.AddMonths(3),
+       IsActive         = true,
+   },
+  new Voucher
+         {
+       Code  = "HANDCRAFT20",
+     DiscountPercent  = 20,
+     MaxDiscountAmount = 500_000,
+        MinOrderAmount   = 2_000_000,
+      MaxUsageCount    = 100,
+     ExpiresAt        = DateTime.UtcNow.AddMonths(1),
+           IsActive         = true,
+    },
+            new Voucher
+            {
+    Code             = "TETNEW25",
+    DiscountPercent  = 25,
+        MaxDiscountAmount = 300_000,
+     MinOrderAmount   = 800_000,
+                MaxUsageCount    = 200,
+  ExpiresAt        = new DateTime(2025, 2, 15),
+        IsActive       = true,
+        }
+   );
+
+        // ── 8. Blog / Lookbook ────────────────────────────────
+        db.BlogPosts.AddRange(
+          new BlogPost
+            {
+        Title        = "Xu hướng đồ thủ công 2025: Wabi-sabi và vật liệu tự nhiên",
+       Slug         = "xu-huong-do-thu-cong-2025-wabi-sabi",
+        Excerpt= "Phong trào ưa chuộng vẻ đẹp không hoàn hảo và vật liệu thuần tự nhiên đang lên ngôi mạnh mẽ trong thiết kế nội thất 2025.",
+                Content      = "<p>Nội dung bài viết đầy đủ về xu hướng Wabi-sabi...</p>",
+              CoverImageUrl = "https://placehold.co/1200x600?text=Wabi+Sabi+2025",
+     IsPublished  = true,
+       Type = "Blog",
+          },
+            new BlogPost
+            {
+    Title   = "Lookbook: Góc nhà xanh với đồ thủ công từ mây tre lá",
+                Slug         = "lookbook-goc-nha-xanh-may-tre-la",
+          Excerpt      = "Khám phá cách phối hợp giỏ mây, chậu cây gốm và đèn tre tạo nên góc nhà xanh mát, thân thiện môi trường.",
+         Content      = "<p>Nội dung lookbook...</p>",
+  CoverImageUrl = "https://placehold.co/1200x600?text=Lookbook+May+Tre",
+     IsPublished  = true,
+             Type         = "Lookbook",
+            },
+          new BlogPost
+          {
+         Title        = "Hướng dẫn chọn quà tặng thủ công ý nghĩa dịp Tết",
+      Slug         = "huong-dan-chon-qua-tang-thu-cong-tet",
+      Excerpt      = "Bộ sưu tập quà tặng thủ công độc đáo mang đậm văn hóa Việt, phù hợp biếu xén dịp Tết Nguyên Đán.",
+     Content      = "<p>Nội dung hướng dẫn...</p>",
+          CoverImageUrl = "https://placehold.co/1200x600?text=Qua+Tang+Tet",
+    IsPublished  = true,
+    Type      = "Blog",
+        }
+        );
+
+    await db.SaveChangesAsync();
+    }
+}

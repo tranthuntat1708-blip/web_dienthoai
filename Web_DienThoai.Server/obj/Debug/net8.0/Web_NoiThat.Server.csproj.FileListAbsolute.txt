@@ -1,0 +1,458 @@
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\spa.proxy.json
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.AssemblyInfoInputs.cache
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.AssemblyInfo.cs
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\spa.proxy.json
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\appsettings.json
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Web_NoiThat.Server.staticwebassets.endpoints.json
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Web_NoiThat.Server.exe
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Web_NoiThat.Server.deps.json
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Web_NoiThat.Server.runtimeconfig.json
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Web_NoiThat.Server.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Web_NoiThat.Server.pdb
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Humanizer.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.AspNetCore.SpaProxy.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\scopedcss\bundle\Web_NoiThat.Server.styles.css
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiT.AF2AE3C7.Up2Date
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\refint\Web_NoiThat.Server.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.pdb
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.genruntimeconfig.cache
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\ref\Web_NoiThat.Server.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Web_NoiThat.Server.staticwebassets.runtime.json
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Google.Apis.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Google.Apis.Auth.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Google.Apis.Core.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Management.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\StackExchange.Redis.dll
+C:\Users\PC\OneDrive\Desktop\231A290060_TrầnThanhĐảm\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.IO.Hashing.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\appsettings.json
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\spa.proxy.json
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Web_NoiThat.Server.staticwebassets.runtime.json
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Web_NoiThat.Server.exe
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Web_NoiThat.Server.deps.json
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Web_NoiThat.Server.runtimeconfig.json
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Web_NoiThat.Server.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Web_NoiThat.Server.pdb
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Google.Apis.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Google.Apis.Auth.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Google.Apis.Core.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.AspNetCore.SpaProxy.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\StackExchange.Redis.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.IO.Hashing.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Management.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.csproj.AssemblyReference.cache
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\spa.proxy.json
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.AssemblyInfoInputs.cache
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.AssemblyInfo.cs
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.csproj.CoreCompileInputs.cache
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\staticwebassets\msbuild.Web_NoiThat.Server.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\staticwebassets\msbuild.build.Web_NoiThat.Server.props
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Web_NoiThat.Server.props
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Web_NoiThat.Server.props
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\scopedcss\bundle\Web_NoiThat.Server.styles.css
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiT.AF2AE3C7.Up2Date
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\refint\Web_NoiThat.Server.dll
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.pdb
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\Web_NoiThat.Server.genruntimeconfig.cache
+C:\Users\Phong-Dien\Downloads\Web_NoiThat\Web_NoiThat\Web_NoiThat.Server\obj\Debug\net8.0\ref\Web_NoiThat.Server.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\appsettings.Development.json
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\appsettings.json
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\backend\package-lock.json
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\backend\package.json
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Web_NoiThat.Server.staticwebassets.runtime.json
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Web_NoiThat.Server.staticwebassets.endpoints.json
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Web_NoiThat.Server.deps.json
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Web_NoiThat.Server.runtimeconfig.json
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Web_NoiThat.Server.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Web_NoiThat.Server.pdb
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Azure.Core.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Azure.Identity.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Google.Apis.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Google.Apis.Auth.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Google.Apis.Core.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Humanizer.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\StackExchange.Redis.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.CodeDom.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.Drawing.Common.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.IO.Hashing.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.Management.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.Memory.Data.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.Runtime.Caching.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.Security.Permissions.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\Web_NoiThat.Server.csproj.AssemblyReference.cache
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\rpswa.dswa.cache.json
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\Web_NoiThat.Server.GeneratedMSBuildEditorConfig.editorconfig
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\Web_NoiThat.Server.AssemblyInfoInputs.cache
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\Web_NoiThat.Server.AssemblyInfo.cs
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\Web_NoiThat.Server.csproj.CoreCompileInputs.cache
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\Web_NoiThat.Server.MvcApplicationPartsAssemblyInfo.cs
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\Web_NoiThat.Server.MvcApplicationPartsAssemblyInfo.cache
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\rjimswa.dswa.cache.json
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\scopedcss\scopedcss.cache
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\scopedcss\bundle\Web_NoiThat.Server.styles.css
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\staticwebassets.build.json
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\staticwebassets.build.json.cache
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\staticwebassets.development.json
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\swae.build.ex.cache
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\Web_NoiT.AF2AE3C7.Up2Date
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\Web_NoiThat.Server.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\refint\Web_NoiThat.Server.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\Web_NoiThat.Server.pdb
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\Web_NoiThat.Server.genruntimeconfig.cache
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\obj\Debug\net8.0\ref\Web_NoiThat.Server.dll
+E:\web_dienthoai (2)\web_dienthoai (1)\web_dienthoai\Web_DienThoai.Server\bin\Debug\net8.0\Web_NoiThat.Server.exe

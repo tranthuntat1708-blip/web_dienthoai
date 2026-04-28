@@ -1,0 +1,34 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Web_NoiThat.Server.Data;
+using Web_NoiThat.Server.DTOs;
+using Web_NoiThat.Server.Models;
+
+namespace Web_NoiThat.Server.Controllers;
+
+/// <summary>
+/// POST /api/appointments       - Khách đặt lịch tư vấn (kèm upload file)
+/// GET  /api/appointments       - Admin: xem danh sách (Authorize Admin)
+/// PUT  /api/appointments/{id}/status - Admin: cập nhật trạng thái
+/// </summary>
+[ApiController]
+[Route("api/[controller]")]
+public class AppointmentsController : ControllerBase
+{
+    private readonly AppDbContext _db;
+    public AppointmentsController(AppDbContext db) => _db = db;
+
+    [HttpPost]
+    public async Task<IActionResult> CreateAppointment([FromBody] CreateAppointmentRequest req)
+    {
+       // TODO: lưu appointment, upload file đính kèm lên storage, gửi email xác nhận
+ return StatusCode(501, "Not implemented yet");
+    }
+
+    [HttpGet]
+    // [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> GetAppointments()
+ {
+        // TODO: phân trang, filter theo status
+        return StatusCode(501, "Not implemented yet");
+    }
+}

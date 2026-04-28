@@ -1,0 +1,24 @@
+// src/api/appointments.ts
+import apiClient from './client';
+import type { AppointmentDto, CreateAppointmentPayload } from '../types/appointment';
+
+export const appointmentApi = {
+  create: (payload: CreateAppointmentPayload) =>
+    apiClient.post<AppointmentDto>('/appointments', payload).then((r) => r.data),
+
+  getMyAppointments: () =>
+    apiClient.get<AppointmentDto[]>('/appointments/my').then((r) => r.data),
+
+  // Admin
+  getAll: (page = 1, pageSize = 20, status?: string) =>
+    apiClient
+   .get<{ total: number; items: AppointmentDto[] }>('/appointments', {
+        params: { page, pageSize, status },
+  })
+      .then((r) => r.data),
+
+  updateStatus: (id: number, status: string, adminNote?: string) =>
+    apiClient
+      .put(`/appointments/${id}/status`, { status, adminNote })
+      .then((r) => r.data),
+};

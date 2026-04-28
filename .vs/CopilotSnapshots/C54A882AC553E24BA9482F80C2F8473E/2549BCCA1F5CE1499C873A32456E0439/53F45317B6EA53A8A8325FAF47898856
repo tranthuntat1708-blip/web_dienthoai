@@ -1,0 +1,93 @@
+﻿namespace Web_NoiThat.Server.DTOs;
+
+// ── REQUEST ──────────────────────────────────────────────
+
+public record ProductFilterRequest(
+    int? CategoryId,
+    string? CategorySlug,   // Filter theo slug thay vì Id
+    string? Q,     // Từ khóa tìm kiếm
+    string? Material,
+    string? Style,
+    string? Color,
+    decimal? MinPrice,
+    decimal? MaxPrice,
+    string? SortBy,         // "newest" | "price_asc" | "price_desc" | "best_seller"
+    int Page = 1,
+    int PageSize = 12
+);
+
+public record CreateProductRequest(
+    string Name,
+    string Slug,
+    string Description,
+    decimal Price,
+    decimal? SalePrice,
+    int CategoryId,
+    string Material,
+    string Style,
+    string Color,
+    int Stock,
+    string MainImageUrl,
+    double? LengthCm,
+    double? WidthCm,
+    double? HeightCm,
+    double? WeightKg
+);
+
+// ── RESPONSE ─────────────────────────────────────────────
+
+/// <summary>Card sản phẩm dùng cho danh sách / grid</summary>
+public record ProductCardDto(
+    int Id,
+    string Name,
+    string Slug,
+    string MainImageUrl,
+    decimal Price,
+    decimal? SalePrice,
+    bool IsOnSale,
+    string Material,
+    string Style,
+    string Color,
+    int SoldCount,
+    double? AverageRating,
+    int ReviewCount
+);
+
+/// <summary>Chi tiết sản phẩm đầy đủ (trang product detail)</summary>
+public record ProductDetailDto(
+    int Id,
+    string Name,
+    string Slug,
+    string Description,
+    string MainImageUrl,
+    IEnumerable<ProductImageDto> SubImages,
+    decimal Price,
+    decimal? SalePrice,
+    bool IsOnSale,
+    int Stock,
+    double? LengthCm,
+    double? WidthCm,
+    double? HeightCm,
+    double? WeightKg,
+    string Material,
+    string Style,
+    string Color,
+    CategoryDto Category,
+    IEnumerable<ProductCardDto> BundledProducts,
+    IEnumerable<ReviewDto> LatestReviews,
+    double? AverageRating,
+    int ReviewCount
+);
+
+public record ProductImageDto(int Id, string Url, string? AltText, int SortOrder);
+
+public record CategoryDto(
+    int Id,
+    string Name,
+    string Slug,
+    string? Description,
+    string? ImageUrl,
+    string? Icon,
+    int SortOrder,
+    int ProductCount
+);

@@ -1,0 +1,83 @@
+﻿// src/types/product.ts
+
+export interface ProductImage {
+  id: number;
+  url: string;
+  altText?: string;
+  sortOrder: number;
+}
+
+export interface Category {
+  id: number;
+  name: string;
+  slug: string;
+  description?: string;
+  imageUrl?: string;
+  icon?: string;
+  sortOrder: number;
+  productCount: number;
+}
+
+/** Dùng cho Product Grid / Card */
+export interface ProductCard {
+  id: number;
+  name: string;
+  slug: string;
+  mainImageUrl: string;
+  price: number;
+  salePrice?: number;
+  isOnSale: boolean;
+  material: string;  // "Gỗ" | "Da" | "Vải" ...
+  style: string;   // "Minimalist" | "Indochine" ...
+  color: string;
+  soldCount: number;
+  averageRating?: number;
+  reviewCount: number;
+}
+
+/** Dùng cho trang chi tiết sản phẩm */
+export interface ProductDetail extends ProductCard {
+  description: string;
+  subImages: ProductImage[];
+  stock: number;
+  // Kích thước
+  lengthCm?: number;
+  widthCm?: number;
+  heightCm?: number;
+  weightKg?: number;
+  category: Category;
+  bundledProducts: ProductCard[];
+  latestReviews: Review[];
+}
+
+export interface Review {
+  id: number;
+  userName: string;
+  userAvatarUrl?: string;
+  rating: number;
+  comment: string;
+  imageUrls: string[];
+  adminReply?: string;
+  createdAt: string;
+}
+
+export interface ProductFilterParams {
+  categoryId?: number;
+  categorySlug?: string;   // Thêm slug filter
+  q?: string;          // Từ khóa tìm kiếm
+  material?: string;
+  style?: string;
+  color?: string;
+  minPrice?: number;
+  maxPrice?: number;
+  sortBy?: 'newest' | 'price_asc' | 'price_desc' | 'best_seller';
+  page?: number;
+  pageSize?: number;
+}
+
+export interface PaginatedProducts {
+  total: number;
+  page: number;
+  pageSize: number;
+  items: ProductCard[];
+}

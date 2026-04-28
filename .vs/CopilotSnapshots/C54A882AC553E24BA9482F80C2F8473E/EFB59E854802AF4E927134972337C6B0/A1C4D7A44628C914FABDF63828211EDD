@@ -1,0 +1,58 @@
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Web_NoiThat.Server.Data;
+using Web_NoiThat.Server.DTOs;
+using Web_NoiThat.Server.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace Web_NoiThat.Server.Controllers;
+
+/// <summary>
+/// POST /api/orders              - Tạo đơn hàng + redirect VNPay
+/// GET  /api/orders/my   - Đơn hàng của user hiện tại
+/// GET  /api/orders/{id}         - Chi tiết đơn hàng
+/// POST /api/orders/vnpay-ipn    - VNPay Webhook (IPN callback)
+/// </summary>
+[ApiController]
+[Route("api/[controller]")]
+public class OrdersController : ControllerBase
+{
+    private readonly AppDbContext _db;
+    public OrdersController(AppDbContext db) => _db = db;
+
+    [HttpPost]
+    [Authorize]
+    public async Task<ActionResult<OrderSummaryDto>> CreateOrder([FromBody] CreateOrderRequest req)
+    {
+    // TODO: validate voucher, tính giảm giá, tạo order, gọi VNPay tạo payment URL
+   return StatusCode(501, "Not implemented yet");
+    }
+
+    [HttpGet("my")]
+    [Authorize]
+    public async Task<ActionResult<IEnumerable<OrderSummaryDto>>> GetMyOrders()
+    {
+    // TODO: lấy orders của user hiện tại
+     return StatusCode(501, "Not implemented yet");
+    }
+
+    [HttpGet("{id:int}")]
+    [Authorize]
+    public async Task<ActionResult<OrderDetailDto>> GetOrder(int id)
+    {
+      // TODO
+        return StatusCode(501, "Not implemented yet");
+    }
+
+    /// <summary>
+    /// VNPay IPN - nhận callback từ VNPay server, cập nhật trạng thái thanh toán
+    /// KHÔNG yêu cầu auth (VNPay gọi trực tiếp)
+    /// </summary>
+    [HttpPost("vnpay-ipn")]
+    [AllowAnonymous]
+    public async Task<IActionResult> VnpayIpn([FromQuery] VnpayIpnRequest ipn)
+    {
+        // TODO: verify checksum, cập nhật IsPaid, PaidAt, VnpayTransactionId
+        return Ok(new { RspCode = "00", Message = "Confirm success" });
+    }
+}

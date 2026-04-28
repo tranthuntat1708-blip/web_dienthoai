@@ -1,0 +1,93 @@
+﻿// src/components/product/ProductCard.jsx
+// Card sản phẩm dùng trong grid danh sách và slider nổi bật
+
+import { Link } from 'react-router-dom';
+import { ShoppingCart, Star } from 'lucide-react';
+import { formatVnd } from '../../utils/format';
+import { useCartStore } from '../../store/cartStore';
+import toast from 'react-hot-toast';
+
+export default function ProductCard({ product }) {
+  const {
+    id, slug, name, mainImageUrl,
+    price, salePrice, isOnSale,
+    averageRating, reviewCount, soldCount,
+  } = product;
+
+  const addItem = useCartStore(s => s.addItem);
+
+  const discountPct = isOnSale && salePrice
+    ? Math.round((1 - salePrice / price) * 100) : 0;
+
+  function handleAddCart(e) {
+    e.preventDefault();
+ e.stopPropagation();
+    addItem(product, 1);
+    toast.success(`Đã thêm vào giỏ!`);
+  }
+
+  return (
+    <Link to={`/san-pham/${slug}`} className="product-card group block">
+      {/* Ảnh */}
+      <div className="relative overflow-hidden" style={{ aspectRatio: '1/1', backgroundColor: 'var(--craft-beige)' }}>
+        <img src={mainImageUrl} alt={name} loading="lazy"
+          className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500" />
+
+        {/* Badge */}
+        {isOnSale && discountPct > 0 && (
+     <span className="badge-sale">-{discountPct}%</span>
+        )}
+
+        {/* Quick add button */}
+  <button onClick={handleAddCart}
+          className="absolute bottom-0 left-0 right-0 py-2.5 text-xs font-semibold text-white
+      opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0
+      transition-all duration-300 flex items-center justify-center gap-1.5"
+style={{ backgroundColor: 'var(--craft-amber)' }}>
+     <ShoppingCart size={13} /> Thêm vào giỏ
+        </button>
+    </div>
+
+   {/* Info */}
+      <div className="p-3">
+        <h3 className="text-sm font-medium leading-snug line-clamp-2 mb-1.5"
+          style={{ color: 'var(--craft-brown)' }}>{name}</h3>
+
+ {/* Stars */}
+        {(reviewCount > 0) && (
+          <div className="flex items-center gap-1 mb-1.5">
+      {Array.from({ length: 5 }).map((_, i) => (
+         <Star key={i} size={10}
+ className={i < Math.round(averageRating ?? 0) ? 'fill-amber-400 text-amber-400' : 'fill-stone-200 text-stone-200'} />
+    ))}
+      <span className="text-[10px] text-stone-400 ml-0.5">({reviewCount})</span>
+          </div>
+        )}
+
+  {/* Price */}
+        <div className="flex items-center gap-2 flex-wrap">
+          {isOnSale && salePrice != null ? (
+  <>
+    <span className="font-bold text-sm" style={{ color: '#d4460c' }}>
+           {formatVnd(salePrice)}
+           </span>
+              <span className="text-xs line-through" style={{ color: 'var(--craft-muted)' }}>
+              {formatVnd(price)}
+            </span>
+    </>
+   ) : (
+      <span className="font-bold text-sm" style={{ color: 'var(--craft-brown)' }}>
+     {formatVnd(price)}
+            </span>
+          )}
+        </div>
+
+        {soldCount > 0 && (
+          <p className="text-[10px] mt-1" style={{ color: 'var(--craft-muted)' }}>
+Đã bán {soldCount}
+     </p>
+   )}
+      </div>
+    </Link>
+  );
+}

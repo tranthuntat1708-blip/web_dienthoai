@@ -1,0 +1,22 @@
+﻿// src/api/orders.ts
+import apiClient from './client';
+import type { CreateOrderPayload, OrderDetail, OrderSummary } from '../types/order';
+
+export const orderApi = {
+  createOrder: (payload: CreateOrderPayload) =>
+    apiClient.post<{ orderSummary: OrderSummary; paymentUrl?: string }>('/orders', payload).then((r) => r.data),
+
+  getMyOrders: () =>
+    apiClient.get<OrderSummary[]>('/orders/my').then((r) => r.data),
+
+  getOrder: (id: number) =>
+    apiClient.get<OrderDetail>(`/orders/${id}`).then((r) => r.data),
+
+  validateVoucher: (code: string, orderAmount: number) =>
+    apiClient
+.post<{ isValid: boolean; discountAmount: number; message?: string }>('/vouchers/validate', {
+        code,
+        orderAmount,
+      })
+     .then((r) => r.data),
+};

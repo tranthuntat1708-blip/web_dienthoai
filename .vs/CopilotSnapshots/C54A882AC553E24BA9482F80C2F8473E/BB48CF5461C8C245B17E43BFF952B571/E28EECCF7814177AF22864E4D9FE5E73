@@ -1,0 +1,38 @@
+﻿// src/components/common/FlashSaleCountdown.jsx
+// Đồng hồ đếm ngược Flash Sale
+
+import { useEffect, useState } from 'react';
+
+/**
+ * @param {{ endAt: string }} props - endAt: ISO date string
+ */
+export default function FlashSaleCountdown({ endAt }) {
+  const [timeLeft, setTimeLeft] = useState(calcTimeLeft());
+
+function calcTimeLeft() {
+    const diff = new Date(endAt).getTime() - Date.now();
+    if (diff <= 0) return { hours: 0, minutes: 0, seconds: 0 };
+    return {
+      hours: Math.floor(diff / 3_600_000),
+      minutes: Math.floor((diff % 3_600_000) / 60_000),
+      seconds: Math.floor((diff % 60_000) / 1_000),
+    };
+  }
+
+  useEffect(() => {
+    const timer = setInterval(() => setTimeLeft(calcTimeLeft()), 1000);
+    return () => clearInterval(timer);
+  }, [endAt]);
+
+  const pad = (n) => String(n).padStart(2, '0');
+
+  return (
+    <div className="flex items-center gap-1 font-mono text-white text-lg font-bold">
+      <div className="bg-red-600 px-2 py-1 rounded">{pad(timeLeft.hours)}</div>
+      <span>:</span>
+      <div className="bg-red-600 px-2 py-1 rounded">{pad(timeLeft.minutes)}</div>
+ <span>:</span>
+      <div className="bg-red-600 px-2 py-1 rounded">{pad(timeLeft.seconds)}</div>
+    </div>
+  );
+}

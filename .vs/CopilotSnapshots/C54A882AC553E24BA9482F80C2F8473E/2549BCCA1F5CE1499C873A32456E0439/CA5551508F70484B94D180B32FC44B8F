@@ -1,0 +1,223 @@
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Web_NoiThat.Server.Data;
+using Web_NoiThat.Server.DTOs;
+using Microsoft.EntityFrameworkCore;
+using Web_NoiThat.Server.Models;
+
+namespace Web_NoiThat.Server.Controllers;
+
+/// <summary>
+/// GET  /api/products          - Lấy danh sách sản phẩm (filter + sort + paging)
+/// GET  /api/products/{slug}   - Chi tiết sản phẩm
+/// POST /api/products        - Thêm sản phẩm (Admin)
+/// PUT  /api/products/{id}     - Sửa sản phẩm (Admin)
+/// DELETE /api/products/{id}   - Xóa sản phẩm (Admin)
+/// </summary>
+[ApiController]
+[Route("api/[controller]")]
+public class ProductsController : ControllerBase
+{
+    private readonly AppDbContext _db;
+    public ProductsController(AppDbContext db) => _db = db;
+
+  // GET /api/products?categoryId=1&material=Gỗ&sortBy=price_asc&page=1&pageSize=12
+    [HttpGet]
+    public async Task<ActionResult<object>> GetProducts([FromQuery] ProductFilterRequest filter)
+    {
+    var query = _db.Products
+         .Include(p => p.Category)
+            .Include(p => p.Reviews)
+            .Where(p => p.IsActive)
+       .AsQueryable();
+
+        // Filter theo categorySlug (ưu tiên) hoặc categoryId
+        if (!string.IsNullOrEmpty(filter.CategorySlug))
+ {
+            var cat = await _db.Categories.FirstOrDefaultAsync(c => c.Slug == filter.CategorySlug);
+          if (cat is not null)
+ query = query.Where(p => p.CategoryId == cat.Id);
+        }
+   else if (filter.CategoryId.HasValue)
+  {
+        query = query.Where(p => p.CategoryId == filter.CategoryId);
+        }
+
+  if (!string.IsNullOrEmpty(filter.Material))
+    query = query.Where(p => p.Material == filter.Material);
+        if (!string.IsNullOrEmpty(filter.Style))
+            query = query.Where(p => p.Style == filter.Style);
+        if (!string.IsNullOrEmpty(filter.Color))
+         query = query.Where(p => p.Color.Contains(filter.Color));
+        if (filter.MinPrice.HasValue)
+         query = query.Where(p => (p.SalePrice ?? p.Price) >= filter.MinPrice);
+        if (filter.MaxPrice.HasValue)
+    query = query.Where(p => (p.SalePrice ?? p.Price) <= filter.MaxPrice);
+if (!string.IsNullOrEmpty(filter.Q))
+            query = query.Where(p => p.Name.Contains(filter.Q) || p.Description.Contains(filter.Q));
+
+        query = filter.SortBy switch
+        {
+"price_asc"   => query.OrderBy(p => p.SalePrice ?? p.Price),
+            "price_desc"  => query.OrderByDescending(p => p.SalePrice ?? p.Price),
+            "best_seller" => query.OrderByDescending(p => p.SoldCount),
+  _       => query.OrderByDescending(p => p.CreatedAt)
+        };
+
+    var total = await query.CountAsync();
+        var items = await query
+        .Skip((filter.Page - 1) * filter.PageSize)
+   .Take(filter.PageSize)
+     .Select(p => new ProductCardDto(
+         p.Id, p.Name, p.Slug, p.MainImageUrl,
+        p.Price, p.SalePrice, p.IsOnSale,
+         p.Material, p.Style, p.Color, p.SoldCount,
+                p.Reviews.Any() ? p.Reviews.Average(r => (double)r.Rating) : (double?)null,
+     p.Reviews.Count
+   ))
+            .ToListAsync();
+
+        return Ok(new { Total = total, Page = filter.Page, PageSize = filter.PageSize, Items = items });
+    }
+
+    // GET /api/products/search?q=may
+    [HttpGet("search")]
+ public async Task<ActionResult<IEnumerable<object>>> Search([FromQuery] string q)
+    {
+        if (string.IsNullOrWhiteSpace(q)) return Ok(Array.Empty<object>());
+
+        var results = await _db.Products
+            .Where(p => p.IsActive && (p.Name.Contains(q) || p.Material.Contains(q)))
+   .OrderByDescending(p => p.SoldCount)
+    .Take(8)
+    .Select(p => new { p.Id, p.Name, p.Slug, p.MainImageUrl })
+ .ToListAsync();
+
+        return Ok(results);
+    }
+
+    // GET /api/products/{slug}
+  [HttpGet("{slug}")]
+    public async Task<ActionResult<ProductDetailDto>> GetProduct(string slug)
+    {
+        var p = await _db.Products
+            .Include(p => p.Category)
+    .Include(p => p.SubImages.OrderBy(i => i.SortOrder))
+         .Include(p => p.Reviews.Where(r => r.IsApproved).OrderByDescending(r => r.CreatedAt))
+                .ThenInclude(r => r.Images)
+  .Include(p => p.Reviews).ThenInclude(r => r.User)
+      .Include(p => p.Bundles).ThenInclude(b => b.BundledProduct)
+    .FirstOrDefaultAsync(p => p.Slug == slug && p.IsActive);
+
+        if (p is null) return NotFound();
+
+        var allReviews = await _db.Reviews.Where(r => r.ProductId == p.Id && r.IsApproved).ToListAsync();
+
+   var dto = new ProductDetailDto(
+    p.Id, p.Name, p.Slug, p.Description, p.MainImageUrl,
+        p.SubImages.Select(i => new ProductImageDto(i.Id, i.Url, i.AltText, i.SortOrder)),
+            p.Price, p.SalePrice, p.IsOnSale, p.Stock,
+  p.LengthCm, p.WidthCm, p.HeightCm, p.WeightKg,
+   p.Material, p.Style, p.Color,
+            new CategoryDto(
+     p.Category.Id, p.Category.Name, p.Category.Slug,
+     p.Category.Description, p.Category.ImageUrl, p.Category.Icon,
+    p.Category.SortOrder, 0),
+        p.Bundles.Select(b => new ProductCardDto(
+        b.BundledProduct.Id, b.BundledProduct.Name, b.BundledProduct.Slug,
+     b.BundledProduct.MainImageUrl, b.BundledProduct.Price, b.BundledProduct.SalePrice,
+     b.BundledProduct.IsOnSale, b.BundledProduct.Material, b.BundledProduct.Style,
+      b.BundledProduct.Color, b.BundledProduct.SoldCount, null, 0
+            )),
+    p.Reviews.Take(5).Select(r => new ReviewDto(
+       r.Id, r.User?.FullName ?? "Ẩn danh", r.User?.AvatarUrl,
+          r.Rating, r.Comment,
+         r.Images.Select(i => i.Url),
+     r.AdminReply, r.CreatedAt
+            )),
+         allReviews.Any() ? allReviews.Average(r => (double)r.Rating) : (double?)null,
+      allReviews.Count
+        );
+
+        return Ok(dto);
+    }
+
+    // POST /api/products  (Admin)
+    [HttpPost]
+    [Authorize(Roles = "Admin")]
+ public async Task<ActionResult> CreateProduct([FromBody] CreateProductRequest req)
+    {
+        var cat = await _db.Categories.FindAsync(req.CategoryId);
+        if (cat is null) return BadRequest(new { message = "Danh mục không tồn tại." });
+
+        var product = new Product
+   {
+         Name        = req.Name,
+            Slug        = req.Slug,
+            Description = req.Description,
+            Price       = req.Price,
+     SalePrice   = req.SalePrice,
+         IsOnSale    = req.SalePrice.HasValue && req.SalePrice > 0,
+      CategoryId  = req.CategoryId,
+  Material    = req.Material,
+        Style       = req.Style,
+    Color       = req.Color,
+   Stock    = req.Stock,
+            MainImageUrl= req.MainImageUrl,
+    LengthCm    = req.LengthCm,
+  WidthCm     = req.WidthCm,
+            HeightCm    = req.HeightCm,
+            WeightKg    = req.WeightKg,
+        IsActive    = true,
+            CreatedAt   = DateTime.UtcNow,
+      UpdatedAt   = DateTime.UtcNow,
+ };
+
+        _db.Products.Add(product);
+      await _db.SaveChangesAsync();
+        return CreatedAtAction(nameof(GetProduct), new { slug = product.Slug }, new { product.Id });
+    }
+
+    // PUT /api/products/{id}  (Admin)
+    [HttpPut("{id:int}")]
+    [Authorize(Roles = "Admin")]
+    public async Task<ActionResult> UpdateProduct(int id, [FromBody] CreateProductRequest req)
+    {
+        var product = await _db.Products.FindAsync(id);
+        if (product is null) return NotFound();
+
+      product.Name        = req.Name;
+        product.Slug        = req.Slug;
+        product.Description = req.Description;
+   product.Price       = req.Price;
+        product.SalePrice   = req.SalePrice;
+        product.IsOnSale  = req.SalePrice.HasValue && req.SalePrice > 0;
+        product.CategoryId  = req.CategoryId;
+ product.Material    = req.Material;
+        product.Style       = req.Style;
+product.Color       = req.Color;
+        product.Stock       = req.Stock;
+        product.MainImageUrl= req.MainImageUrl;
+        product.LengthCm    = req.LengthCm;
+ product.WidthCm     = req.WidthCm;
+        product.HeightCm    = req.HeightCm;
+        product.WeightKg    = req.WeightKg;
+        product.UpdatedAt   = DateTime.UtcNow;
+
+        await _db.SaveChangesAsync();
+   return NoContent();
+    }
+
+    // DELETE /api/products/{id}  (Admin)
+    [HttpDelete("{id:int}")]
+    [Authorize(Roles = "Admin")]
+    public async Task<ActionResult> DeleteProduct(int id)
+    {
+     var product = await _db.Products.FindAsync(id);
+        if (product is null) return NotFound();
+
+        product.IsActive = false; // Soft delete
+     await _db.SaveChangesAsync();
+        return NoContent();
+    }
+}

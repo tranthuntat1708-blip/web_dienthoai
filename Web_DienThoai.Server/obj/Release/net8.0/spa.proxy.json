@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:61348",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\Users\\PC\\OneDrive\\Desktop\\231A290060_TrầnThanhĐảm\\Web_NoiThat\\Web_NoiThat.Server\\..\\web_noithat.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

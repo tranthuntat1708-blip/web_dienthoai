@@ -1,0 +1,27 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Database=WebNoiThatDb;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true"
+  },
+
+  "Jwt": {
+    "Key": "CHANGE_THIS_TO_A_STRONG_SECRET_KEY_MIN_32_CHARS",
+    "Issuer": "WebNoiThat",
+    "Audience": "WebNoiThatClient",
+    "ExpireDays": 7
+  },
+
+  "VNPay": {
+    "TmnCode": "YOUR_VNPAY_TMN_CODE",
+    "HashSecret": "YOUR_VNPAY_HASH_SECRET",
+    "BaseUrl": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+    "ReturnUrl": "https://localhost:7001/api/orders/vnpay-return"
+  }
+}
